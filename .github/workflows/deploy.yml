@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - uses: actions/configure-pages@v5
       # npm ci 会先清空仓库中提交过的 node_modules,再按 lockfile 全新安装
       - run: npm ci
       - run: npm run docs:build
