@@ -23,17 +23,37 @@ export const zh = defineConfig({
       { text: 'GitHub', link: 'https://github.com/fanfaredash/MiaCode' }
     ],
     sidebar: [
-      { text: 'MiaCode', base: '/miacode', collapsed: false, items: [
-        { text: '简介', link: '/' },
-        { text: '使用 MiaCode', base: '/miacode/usage', collapsed: true, items: [
-          { text: '新建谱面', link: '/new' }, { text: '恢复备份', link: '/recovery' },
-          { text: '导出', link: '/export' }, { text: '时间轴', link: '/timeline' },
-          { text: '音频与同步', link: '/audio-sync' },
-          { text: '工具', link: '/tools' }, { text: 'touch 点击输入', link: '/touch-input' }
+      { text: 'MiaCode', base: '/miacode', link: '/', collapsed: false, items: [
+        { text: 'Quick Start', link: '/quick-start' },
+        { text: '谱面', collapsed: true, items: [
+          { text: '主区域', collapsed: true, items: [
+            { text: '文字编辑', link: '/chart/text-editor' },
+            { text: '谱面预览', link: '/chart/preview' },
+            { text: '时间轴', link: '/chart/timeline' }
+          ] },
+          { text: '语法 & 无理检测', link: '/chart/validation' },
+          { text: '谱面信息', link: '/chart/information' },
+          { text: '延迟校准', link: '/chart/latency-calibration' }
         ] },
-        { text: '设置', base: '/miacode/settings', collapsed: true, items: [
-          { text: '编辑区', link: '/edit' }, { text: '预览区', link: '/preview' }
-        ] }
+        { text: '设置', collapsed: true, items: [
+          { text: '预览设置', link: '/settings/preview' },
+          { text: '音频设置', link: '/settings/audio' },
+          { text: '首选项', link: '/settings/preferences' }
+        ] },
+        { text: '导出', collapsed: true, items: [
+          { text: '视频导出', link: '/export/video', collapsed: true, items: [
+            { text: '片头', link: '/export/intro' }
+          ] },
+          { text: '封面导出', link: '/export/cover' },
+          { text: '打包 ZIP', link: '/export/zip' }
+        ] },
+        { text: '工具', collapsed: true, items: [
+          { text: '谱面整理', link: '/tools/chart-organization' },
+          { text: 'track.mp3 & pv.mp4 工具', link: '/tools/media' },
+          { text: '谱面下载', link: '/tools/download' },
+          { text: '谱面上传', link: '/tools/upload' }
+        ] },
+        { text: '备份 & 恢复', link: '/backup-recovery' }
       ] },
       { text: '其余', base: '/other', collapsed: true, items: [{ text: '关于我们', link: '/about' }] }
     ],

@@ -1,3 +1,56 @@
 .VPSocialLinks.VPNavBarSocialLinks.social-links {
     margin-right: 0;
   }
+
+.vp-doc .interface-shot {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 8px;
+}
+
+.vp-doc .doc-figure {
+    width: fit-content;
+    max-width: 100%;
+    margin: 28px auto;
+}
+
+.vp-doc .doc-figure--portrait {
+    max-width: min(100%, 420px);
+}
+
+.vp-doc .doc-figure--compact {
+    max-width: min(100%, 320px);
+}
+
+.vp-doc .doc-figure figcaption {
+    max-width: 64ch;
+    margin: 10px auto 0;
+    color: var(--vp-c-text-2);
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.vp-doc .doc-figure-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 24px;
+    margin: 28px 0;
+}
+
+.vp-doc .doc-figure-grid .doc-figure {
+    min-width: 0;
+    margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+    .vp-doc .doc-figure-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+}

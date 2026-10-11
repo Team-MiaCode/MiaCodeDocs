@@ -6,14 +6,14 @@ titleTemplate: simai 谱面创作工具
 
 hero:
   name: MiaCode
-  text: 开源的全平台多功能 maimai 谱面创作工具
+  text: maimai 谱面编辑、预览与导出
   actions:
     - theme: brand
       text: 开始使用
-      link: /miacode/usage/new
+      link: /miacode/quick-start
     - theme: alt
       text: GitHub
-      link: https://github.com/fanfaredash/MiaCode
+      link: https://github.com/Team-MiaCode/MiaCode
   image:
     src: /images/miacode.png
     alt: MiaCode 图标

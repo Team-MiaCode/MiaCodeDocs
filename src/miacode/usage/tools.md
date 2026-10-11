@@ -1,7 +1,9 @@
 # 工具
 
-::: tip
-`延迟校准`、`BPM 测量` 以及 `整谱规范化` 也在这个按钮内哦！
-:::
+工具按用途拆分到独立页面：
 
-MiaCode 提供了一些写谱前处理的便利工具，它们可以帮助你对音频或谱面 PV 进行处理。
+- [谱面整理](/miacode/tools/chart-organization)
+- [track.mp3 & pv.mp4 工具](/miacode/tools/media)
+- [延迟校准](/miacode/chart/latency-calibration)
+- [谱面下载](/miacode/tools/download)
+- [谱面上传](/miacode/tools/upload)

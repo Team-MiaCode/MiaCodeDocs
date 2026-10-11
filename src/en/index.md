@@ -6,14 +6,14 @@ titleTemplate: simai chart creation tool
 
 hero:
   name: MiaCode
-  text: An open-source, cross-platform, versatile maimai chart creation tool
+  text: Edit, preview, and export maimai charts
   actions:
     - theme: brand
       text: Get started
-      link: /en/miacode/usage/new
+      link: /en/miacode/quick-start
     - theme: alt
       text: GitHub
-      link: https://github.com/fanfaredash/MiaCode
+      link: https://github.com/Team-MiaCode/MiaCode
   image:
     src: /images/miacode.png
     alt: MiaCode icon

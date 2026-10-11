@@ -1,11 +1,20 @@
 # Overview
 
-This is what you see when you first open the software. From left to right, there is the sidebar, editor, and preview area. Like VS Code, you can freely adjust their proportions within the window.
+MiaCode is an open-source maimai chart editor with live preview, syntax and pattern checks, video export, and cover composition. This guide describes the development version.
 
-Get started with MiaCode!
+Start with [Quick Start](/en/miacode/quick-start) to create a chart, enter song information, and align the beat before editing.
 
-<img class="interface-shot" src="/images/首页.png" alt="MiaCode main interface">
+## Workspace
 
-## Open source
+The sidebar provides chart, settings, export, and tool pages. The main area contains the editor and preview. The bottom panel provides the timeline and analysis lists.
 
-[![MiaCode GitHub repository card](https://readme-stats.vanillaaaa.org/api/pin/?username=qianxia-a&repo=MiaCode)](https://github.com/qianxia-a/MiaCode)
+Drag panel boundaries to adjust their proportions. The editor and preview order is set in [Preferences](/en/miacode/settings/preferences).
+
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/首页.png" alt="MiaCode workspace">
+<figcaption>MiaCode workspace</figcaption>
+</figure>
+
+## Source and releases
+
+Source code and release packages are available in the [MiaCode repository](https://github.com/Team-MiaCode/MiaCode). Report usage issues and feature requests through [Issues](https://github.com/Team-MiaCode/MiaCode/issues).

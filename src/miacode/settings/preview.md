@@ -1,31 +1,40 @@
-# 预览区
+# 预览设置
 
-你可以方便地在预览区修改所有关于预览的设定。当然，不管你如何修改，最终都可以在导出时再次修改最终谱面确认效果。
+使用 `预览 → 预览设置` 打开设置窗口。选项分为画面、游戏和皮肤三组，修改后应用到当前预览。视频导出页也提供这些画面选项。
 
-MiaCode 的预览默认为全屏预览，也就是说，当你导入 PV 后，关闭全屏预览时，导入的 PV 会被裁剪（不影响导出效果）。
+## 视频
 
-预览区支持自由调整大小！当你想要获得更大的预览区来观察谱面时，只需要拖动边界就可以了！
+内侧与外侧亮度分别控制背景或 PV 对应区域的亮度。谱面显示范围用于调整舞台在画面中的占比。
 
-<img class="interface-shot" src="/images/预览区.png" alt="预览区">
+背景 / PV 缩放模式支持填充、完整显示、居中方框，以及内圈适应配合外圈填充。根据素材比例选择模式，查看预览中的裁切结果。
 
-## 预览设置
+画面选项还包括平滑亮度、时间戳、暂停时显示判定范围，以及 Touch 点击输入开关。Touch 操作见 [谱面预览](/miacode/chart/preview#touch-点击输入)。
 
-### 视频
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/预览设置-视频.png" alt="预览画面设置">
+<figcaption>预览画面设置</figcaption>
+</figure>
 
-在这个页面，可以调整预览时的亮度效果。你可以将内/外侧调整得更亮或者更暗，也可以将谱面显示的范围进行调整，~~就像是 AstroDX 那样~~。
+## 游戏
 
-在这个页面，你可以开启 `启用 touch 点击输入`。这个功能默认开启，谱面播放暂停并且按下 `Ctrl` 时，就可以在预览区点击任意区块输入 touch（就像 `Visual Maimai` 一样）。详情参见 [touch 点击输入](/miacode/usage/touch-input)。
+Tap 与 Touch 流速分别设置。Slide 层叠顺序提供 DX 与 FiNALE 风格，用于调整重叠 Slide 的显示顺序。
 
-<img class="interface-shot" src="/images/预览设置-视频.png" alt="视频预览设置">
+中心显示可以选择连击、达成率、DX 分数等内容；判定效果与判定文字距离用于调整反馈的位置和类型。
 
-### 游戏
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/预览设置-游戏.png" alt="预览游戏设置">
+<figcaption>预览游戏设置</figcaption>
+</figure>
 
-在这个页面，你可以调整各物件的流速、层叠顺序的风格（`DX`：新的 `slide` 会出现在旧的 `slide` 下方；`ST`（标准）：新的 `slide` 会出现在旧的 `slide` 上方）、中心数据显示和判定效果的位置。
+## 皮肤
 
-<img class="interface-shot" src="/images/预览设置-游戏.png" alt="游戏预览设置">
+选择物件皮肤、谱面效果和判定线样式，通过 `打开目录` 管理对应素材。
 
-### 皮肤
+HUD 字体按显示区域设置，包括中心显示、时间戳、物量统计等。可以选择已有字体、导入字体文件，或恢复该区域的字体设置。
 
-在这个页面，你可以自行修改皮肤和字体。一切都可以按照自己的审美来！
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/预览设置-皮肤.png" alt="预览皮肤设置">
+<figcaption>预览皮肤设置</figcaption>
+</figure>
 
-<img class="interface-shot" src="/images/预览设置-皮肤.png" alt="皮肤预览设置">
+预览刷新率与视频解码方式见 [首选项 → 性能](/miacode/settings/preferences#性能)，各声音通道的音量见 [音频设置](/miacode/settings/audio)。

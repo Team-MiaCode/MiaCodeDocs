@@ -1,21 +1,6 @@
 # 时间轴
 
-一般来说，时间轴不只承担着时间轴的功能。你可以在时间轴模块看到时间轴、语法和无理三个功能（是的，我们将语法和无理直接整合进一个地方了，非常方便）。
+时间轴、语法检查和无理检测已拆分到：
 
-<img class="interface-shot" src="/images/时间轴模块.png" alt="时间轴模块">
-
-你可以直接拖动时间轴来改变预览区的实时渲染画面。如果速度不合你的心意，可以通过修改比例来调整速度。
-
-<img class="interface-shot" src="/images/比例指示图.png" alt="比例指示图">
-
-## 语法
-
-MiaCode 会监测你的 `simai` 语法。当语法无法被其他谱面制作软件、游玩谱面的软件或预览谱面的软件正确解析时，就会出现警告。
-
-<img class="interface-shot" src="/images/语法模块.png" alt="语法模块">
-
-## 无理
-
-MiaCode 的无理检测由 `Muri` 提供方法。一般来说，当你写出无理配置或有可能无理的配置时，语法就会立刻发出警告，以提醒你当前配置有风险。
-
-<img class="interface-shot" src="/images/无理模块.png" alt="无理模块">
+- [时间轴](/miacode/chart/timeline)
+- [语法 & 无理检测](/miacode/chart/validation)
