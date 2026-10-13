@@ -11,7 +11,7 @@ pageClass: download-page
 
 # 下载 MiaCode
 
-<span class="download-version">2.0.0-alpha</span>预览版本 · 下载对应平台的压缩包，解压后即可使用。首次使用可参阅[快速开始](/miacode/quick-start)。 {.download-meta}
+版本号 <span class="download-version">2.0.0-alpha</span>，下载后解压运行。 {.download-meta}
 
 <!-- 维护下载链接时，以 MiaCode dev 分支 docs/ops/RELEASE_CHECKLIST.md 的
      Update Manifest 章节及线上 update/2/latest.json 为准。
@@ -23,7 +23,7 @@ pageClass: download-page
       <svg class="download-os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M0 3.449 9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
       <div>
         <h3>Windows</h3>
-        <p class="download-arch">x64 · Intel / AMD 处理器</p>
+        <p class="download-arch">x64</p>
       </div>
     </div>
     <code class="download-file">MiaCode_2.0.0-alpha_win_x64.7z</code>
@@ -34,7 +34,7 @@ pageClass: download-page
       <svg class="download-os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M0 3.449 9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
       <div>
         <h3>Windows</h3>
-        <p class="download-arch">ARM64 · 骁龙等 ARM 处理器</p>
+        <p class="download-arch">ARM64</p>
       </div>
     </div>
     <code class="download-file">MiaCode_2.0.0-alpha_win_arm64.7z</code>
@@ -45,10 +45,11 @@ pageClass: download-page
       <svg class="download-os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
       <div>
         <h3>macOS</h3>
-        <p class="download-arch">Apple 芯片 · M1 及更新机型</p>
+        <p class="download-arch">Apple 芯片</p>
       </div>
     </div>
     <code class="download-file">MiaCode_2.0.0-alpha_mac_arm64.7z</code>
+    <a href="/miacode/quick-start#下载与启动">打不开的解决办法</a>
     <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0-alpha/MiaCode_2.0.0-alpha_mac_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
   </section>
 </div>
