@@ -4,9 +4,16 @@ Create a chart from a song, enter its information, align the beat, and save your
 
 ## Download and launch
 
-Release packages are available on [GitHub Releases](https://github.com/Team-MiaCode/MiaCode/releases). Development builds are listed under [GitHub Actions](https://github.com/Team-MiaCode/MiaCode/actions/workflows/package.yml); select a run for the `dev` branch.
+Packages for each platform are on [Download MiaCode](/en/download). Extract the archive after downloading.
 
-On Windows, extract the package for your architecture and launch `MiaCode.exe`. On an Apple silicon Mac, extract and launch `MiaCode.app`. Linux build instructions are in the repository [README](https://github.com/Team-MiaCode/MiaCode/blob/dev/README_EN.md).
+- **Windows**: double-click `MiaCode.exe` in the extracted folder.
+- **macOS**: double-click `MiaCode.app`, or drag it into the Applications folder first. If macOS refuses to open it, run this in Terminal from the extracted folder, then launch again:
+
+  ```bash
+  xattr -dr com.apple.quarantine "MiaCode.app"
+  ```
+
+Linux build instructions are in the repository [README](https://github.com/Team-MiaCode/MiaCode/blob/dev/README_EN.md#linux-advanced-users).
 
 ## Create a chart
 

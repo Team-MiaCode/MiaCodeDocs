@@ -1,0 +1,33 @@
+/* blur.css：导航、搜索框与本地大纲栏的毛玻璃效果 */
+
+/* 首页下滑后导航透明 */
+.VPNavBar:not(.has-sidebar):not(.home.top) {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+
+/* 搜索框透明 */
+.DocSearch-Button {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+
+/* 文档页侧边栏顶部透明 */
+.curtain {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 960px) {
+  /* 文档页导航中间透明 */
+  .VPNavBar:not(.home.top) .content-body {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* 移动端大纲栏透明 */
+.VPLocalNav {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}

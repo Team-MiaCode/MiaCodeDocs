@@ -2,7 +2,7 @@
 
 MiaCode 是用于创作 maimai 谱面的开源工具，将文字编辑、实时预览、语法与无理检测、视频和封面导出放在同一个工作区中。本手册按开发版的界面与功能编写。
 
-初次使用可以从 [Quick Start](/miacode/quick-start) 开始：创建谱面、填写歌曲信息、校准节拍，进入文字编辑与预览。
+初次使用可以阅读 [快速开始](/miacode/quick-start)：创建谱面、填写歌曲信息、校准节拍，进入文字编辑与预览。
 
 ## 工作区
 
@@ -15,4 +15,4 @@ MiaCode 是用于创作 maimai 谱面的开源工具，将文字编辑、实时�
 
 ## 开源
 
-源码与发行包见 [MiaCode GitHub 仓库](https://github.com/Team-MiaCode/MiaCode)。使用中遇到的情况或功能建议可以提交到 [Issues](https://github.com/Team-MiaCode/MiaCode/issues)。
+源码见 [MiaCode GitHub 仓库](https://github.com/Team-MiaCode/MiaCode)，已发布安装包见 [下载 MiaCode](/download)。使用中遇到的情况或功能建议可以提交到 [Issues](https://github.com/Team-MiaCode/MiaCode/issues)。

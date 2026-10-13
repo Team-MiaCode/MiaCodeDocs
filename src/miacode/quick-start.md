@@ -1,12 +1,19 @@
-# Quick Start
+# 快速开始
 
 从一首歌曲开始，完成新建、校准和保存，就可以编写谱面了。
 
 ## 下载与启动
 
-发行包见 [GitHub Releases](https://github.com/Team-MiaCode/MiaCode/releases)。开发版构建见 [GitHub Actions](https://github.com/Team-MiaCode/MiaCode/actions/workflows/package.yml)，选择 `dev` 分支的构建记录。
+各平台安装包见 [下载 MiaCode](/download)，下载后解压即可使用。
 
-Windows 用户下载对应架构的压缩包，解压后启动 `MiaCode.exe`。Apple 芯片的 macOS 用户解压后启动 `MiaCode.app`。Linux 的源码构建步骤见仓库的 [README](https://github.com/Team-MiaCode/MiaCode#构建)。
+- **Windows**：双击解压目录中的 `MiaCode.exe` 启动。
+- **macOS**：双击 `MiaCode.app` 启动，也可将其拖入"应用程序"文件夹。若系统提示无法打开，在解压目录打开终端执行以下命令后再启动：
+
+  ```bash
+  xattr -dr com.apple.quarantine "MiaCode.app"
+  ```
+
+Linux 的源码构建步骤见仓库的 [README](https://github.com/Team-MiaCode/MiaCode/blob/dev/README.md#linux适用于高级用户)。
 
 ## 新建谱面
 

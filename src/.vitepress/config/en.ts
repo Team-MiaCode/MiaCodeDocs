@@ -5,7 +5,7 @@ export const en = defineConfig({
   description: 'MiaCode documentation and simai chart creation guide',
   themeConfig: {
     editLink: {
-      pattern: 'https://github.com/qianxia-a/MiacodeDocs/edit/main/src/:path',
+      pattern: 'https://github.com/Team-MiaCode/MiaCodeDocs/edit/main/src/:path',
       text: 'Edit this page on GitHub'
     },
     lastUpdated: {
@@ -16,8 +16,9 @@ export const en = defineConfig({
       }
     },
     nav: [
-      { text: 'MiaCode', link: '/en/miacode/' }, { text: 'About us', link: '/en/other/about' },
-      { text: 'GitHub', link: 'https://github.com/fanfaredash/MiaCode' }
+      { text: 'Docs', link: '/en/miacode/', activeMatch: '^/en/miacode/' },
+      { text: 'Download', link: '/en/download' },
+      { text: 'GitHub', link: 'https://github.com/Team-MiaCode/MiaCode' }
     ],
     sidebar: [
       { text: 'MiaCode', base: '/en/miacode', link: '/', collapsed: false, items: [
@@ -51,8 +52,7 @@ export const en = defineConfig({
           { text: 'Chart upload', link: '/tools/upload' }
         ] },
         { text: 'Backup & recovery', link: '/backup-recovery' }
-      ] },
-      { text: 'More', base: '/en/other', collapsed: true, items: [{ text: 'About us', link: '/about' }] }
+      ] }
     ],
     docFooter: { prev: 'Previous', next: 'Next' }, outline: { level: [2, 3], label: 'On this page' }, langMenuLabel: 'Languages'
   }

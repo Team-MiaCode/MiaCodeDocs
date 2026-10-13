@@ -5,7 +5,7 @@ export const zh = defineConfig({
   description: 'MiaCode 使用文档与 simai 谱面创作参考',
   themeConfig: {
     editLink: {
-      pattern: 'https://github.com/qianxia-a/MiacodeDocs/edit/main/src/:path',
+      pattern: 'https://github.com/Team-MiaCode/MiaCodeDocs/edit/main/src/:path',
       text: '在 GitHub 上编辑此页面'
     },
     lastUpdated: {
@@ -16,15 +16,13 @@ export const zh = defineConfig({
       }
     },
     nav: [
-      { text: 'MiaCode', base: '/miacode', collapsed: true, items: [
-        { text: '简介', link: '/' }
-      ] },
-      { text: '关于我们', link: '/other/about' },
-      { text: 'GitHub', link: 'https://github.com/fanfaredash/MiaCode' }
+      { text: '文档', link: '/miacode/', activeMatch: '^/miacode/' },
+      { text: '下载', link: '/download' },
+      { text: 'GitHub', link: 'https://github.com/Team-MiaCode/MiaCode' }
     ],
     sidebar: [
       { text: 'MiaCode', base: '/miacode', link: '/', collapsed: false, items: [
-        { text: 'Quick Start', link: '/quick-start' },
+        { text: '快速开始', link: '/quick-start' },
         { text: '谱面', collapsed: true, items: [
           { text: '主区域', collapsed: true, items: [
             { text: '文字编辑', link: '/chart/text-editor' },
@@ -54,8 +52,7 @@ export const zh = defineConfig({
           { text: '谱面上传', link: '/tools/upload' }
         ] },
         { text: '备份 & 恢复', link: '/backup-recovery' }
-      ] },
-      { text: '其余', base: '/other', collapsed: true, items: [{ text: '关于我们', link: '/about' }] }
+      ] }
     ],
     docFooter: { prev: '上一页', next: '下一页' }, outline: { level: [2, 3], label: '页面导航' }, langMenuLabel: '切换语言'
   }

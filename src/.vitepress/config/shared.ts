@@ -17,7 +17,7 @@ export const shared = defineConfig({
         repoURL: () => 'https://github.com/Team-MiaCode/MiaCodeDocs'
       }),
       GitChangelogMarkdownSection({
-        exclude: (id) => id.endsWith('index.md'),
+        exclude: (id) => id.endsWith('index.md') || id.endsWith('download.md'),
         sections: {
           disableChangelog: false,
           disableContributors: true
@@ -31,6 +31,6 @@ export const shared = defineConfig({
   themeConfig: {
     logo: '/images/miacode.png',
     search: { provider: 'local' },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/fanfaredash/MiaCode' }]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/Team-MiaCode/MiaCode' }]
   }
 })

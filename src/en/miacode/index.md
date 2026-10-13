@@ -17,4 +17,4 @@ Drag panel boundaries to adjust their proportions. The editor and preview order 
 
 ## Source and releases
 
-Source code and release packages are available in the [MiaCode repository](https://github.com/Team-MiaCode/MiaCode). Report usage issues and feature requests through [Issues](https://github.com/Team-MiaCode/MiaCode/issues).
+Source code is in the [MiaCode repository](https://github.com/Team-MiaCode/MiaCode), and published packages are on the [Download MiaCode](/en/download) page. Report usage issues and feature requests through [Issues](https://github.com/Team-MiaCode/MiaCode/issues).

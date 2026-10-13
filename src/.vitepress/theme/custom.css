@@ -2,97 +2,223 @@
 @import './style/custom-block.css';
 @import './style/vp-code-group.css';
 @import './style/var.css';
+@import './style/blur.css';
 @import './style/main.css';
-
-
-.VPHomeHero .main .text,
-.VPHomeHero .main .name span {
-    --tw-gradient-from: #99d3fb;
-    --tw-gradient-via: #a1b8fc;
-    /* 中间颜色点 */
-    --tw-gradient-to: #ebc4fb;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to);
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* 兼容性 */
-    color: transparent;
-    /* 确保文本颜色透明 */
-}
-
-.VPButton.brand {
-    background-color: #f472b6 !important;
-}
 
 .VPLocalSearchBox #localsearch-list mark {
     background-color: rgba(255, 138, 128, 0.3);
 }
 
-/* 首页 Hero 图像保持在内容区域内，不侵入顶部导航 */
-.VPHomeHero .image .image-src {
-    max-width: 360px;
-    max-height: 360px;
-    animation: hero-float 3.8s ease-in-out infinite;
-    will-change: transform;
+/* ---------- 首页 ---------- */
+
+/* 中文标题只在标点或空格处换行，避免把词语拆开 */
+.VPHomeHero .text,
+.VPHomeHero .tagline {
+    word-break: keep-all;
+    text-wrap: balance;
 }
 
-.VPHomeHero {
-    padding-top: 56px !important;
+.VPHomeHero .image-src {
+    animation: hero-float 4s ease-in-out infinite;
 }
 
-.VPHomeHero .main {
-    transform: translateY(48px);
-}
-
-@media (min-width: 960px) {
-    .VPHomeHero .image {
-        transform: translateX(-220px);
-    }
-}
-
+/* VitePress 用 translate(-50%, -50%) 居中图片，动画需保留该偏移 */
 @keyframes hero-float {
     0%,
     100% {
-        transform: translateY(-100px);
+        transform: translate(-50%, -50%);
     }
 
     50% {
-        transform: translateY(-88px);
+        transform: translate(-50%, calc(-50% - 8px));
     }
 }
 
-.mia-footer {
-    --mia-footer-bg: #f6f6f7;
-    --mia-footer-heading: rgba(20, 20, 24, 0.82);
-    --mia-footer-text: rgba(20, 20, 24, 0.58);
-    margin-top: 0;
-    padding: 56px 32px 48px;
-    background: var(--mia-footer-bg);
-    border-top: 1px solid rgba(20, 20, 24, 0.04);
+.VPFeature {
+    border-color: var(--vp-c-divider);
+    transition: border-color 0.25s, transform 0.25s;
 }
 
-.dark .mia-footer {
-    --mia-footer-bg: #151519;
-    --mia-footer-heading: rgba(255, 255, 255, 0.86);
-    --mia-footer-text: rgba(255, 255, 255, 0.62);
-    border-top-color: rgba(255, 255, 255, 0.04);
+.VPFeature.link:hover {
+    border-color: var(--vp-c-brand-1);
+    transform: translateY(-2px);
+}
+
+.VPFeature .icon {
+    background-color: var(--vp-c-brand-soft);
+}
+
+.home-showcase {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 72px 24px 0;
+    text-align: center;
+}
+
+.vp-doc .home-showcase h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.vp-doc .home-showcase p {
+    max-width: 640px;
+    margin: 12px auto 36px;
+    color: var(--vp-c-text-2);
+    line-height: 1.7;
+}
+
+.home-showcase img {
+    width: 100%;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 12px;
+    box-shadow: 0 24px 64px -24px rgba(190, 24, 93, 0.25);
+}
+
+/* ---------- 下载页 ---------- */
+
+/* 下载页无侧栏，放宽内容区让三张卡片并排；正文仍保持易读行宽 */
+@media (min-width: 960px) {
+    .download-page .VPDoc:not(.has-sidebar) .content {
+        max-width: 1024px;
+    }
+
+    .download-page .vp-doc > div > :not(.download-grid) {
+        max-width: 720px;
+    }
+}
+
+.vp-doc .download-meta {
+    color: var(--vp-c-text-2);
+}
+
+.download-version {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: var(--vp-c-brand-soft);
+    color: var(--vp-c-brand-1);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 32px 0 0;
+}
+
+.download-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    min-width: 0;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 14px;
+    background: var(--vp-c-bg-soft);
+    transition: border-color 0.25s;
+}
+
+.download-card:hover {
+    border-color: var(--vp-c-brand-1);
+}
+
+.download-card-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.download-os-icon {
+    flex: none;
+    width: 28px;
+    height: 28px;
+    color: var(--vp-c-text-1);
+}
+
+.vp-doc .download-card h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.vp-doc .download-arch {
+    margin: 2px 0 0;
+    color: var(--vp-c-text-2);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.vp-doc .download-file {
+    padding: 0;
+    background: none;
+    color: var(--vp-c-text-3);
+    font-size: 12px;
+    word-break: break-all;
+}
+
+
+.vp-doc .download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: auto;
+    padding: 9px 16px;
+    border-radius: 8px;
+    background: var(--vp-button-brand-bg);
+    color: var(--vp-button-brand-text);
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: background-color 0.25s;
+}
+
+.vp-doc .download-button:hover {
+    background: var(--vp-button-brand-hover-bg);
+    color: var(--vp-button-brand-hover-text);
+}
+
+/* ---------- 页脚 ---------- */
+
+.mia-footer {
+    --mia-footer-bg: var(--vp-c-bg-soft);
+    --mia-footer-heading: var(--vp-c-text-1);
+    --mia-footer-text: var(--vp-c-text-2);
+    padding: 48px 24px;
+    background: var(--mia-footer-bg);
+    border-top: 1px solid var(--vp-c-divider);
 }
 
 .mia-footer-inner {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 64px;
-    max-width: 540px;
+    gap: 48px;
+    max-width: 560px;
     margin: 0 auto;
 }
 
 .mia-footer-group h2 {
-    margin: 0 0 20px;
+    margin: 0 0 16px;
     color: var(--mia-footer-heading);
     font-size: 13px;
     font-weight: 700;
     line-height: 1.4;
+}
+
+.mia-footer-group ul {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .mia-footer-group a {
@@ -100,7 +226,7 @@
     font-size: 13px;
     line-height: 1.6;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.25s;
 }
 
 .mia-footer-group a:hover {
@@ -112,74 +238,28 @@
     font-size: 12px;
 }
 
+@media (max-width: 768px) {
+    .download-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
 @media (max-width: 640px) {
-    .VPHomeHero {
-        padding-top: 32px !important;
+    .home-showcase {
+        padding: 48px 24px 0;
     }
 
-    .VPHomeHero .main {
-        transform: translateY(24px);
-    }
-
-    .VPHomeHero .image {
-        transform: none;
-    }
-
-    .mia-footer {
-        padding: 40px 24px 36px;
+    .vp-doc .home-showcase h2 {
+        font-size: 22px;
     }
 
     .mia-footer-inner {
-        display: block;
+        gap: 24px;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .VPHomeHero .image .image-src {
+    .VPHomeHero .image-src {
         animation: none;
     }
-}
-/* .vitepress\theme\style\blur.css */
-:root {
-
-    /* 首页下滑后导航透明 */
-    .VPNavBar:not(.has-sidebar):not(.home.top) {
-        background-color: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
-    }
-
-    /* 搜索框透明 */
-    .DocSearch-Button {
-        background-color: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
-    }
-
-    /* Feature透明 */
-    .VPFeature {
-        border: none;
-        box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
-        background-color: transparent;
-    }
-
-    /* 文档页侧边栏顶部透明 */
-    .curtain {
-        background-color: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
-    }
-
-    @media (min-width: 960px) {
-
-        /* 文档页导航中间透明 */
-        .VPNavBar:not(.home.top) .content-body {
-            background-color: rgba(255, 255, 255, 0);
-            backdrop-filter: blur(10px);
-        }
-    }
-
-    /* 移动端大纲栏透明 */
-    .VPLocalNav {
-        background-color: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(10px);
-    }
-
 }

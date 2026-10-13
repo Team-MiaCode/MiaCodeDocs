@@ -1,12 +1,21 @@
-@import '../font/HarmonyOS_Sans_SC_Medium/font.css';
+/*
+ * 只保留实际用到的 400 / 500 / 700 三个字重。
+ * 字体按 unicode-range 切片加载，若同时存在 Black(900) 等更粗字重，
+ * Safari 会在同一行标题里按切片混用 Bold 与 Black，导致字重忽粗忽细。
+ * VitePress 的 600（标题）与 800（更新时间）都会匹配到 Bold。
+ */
 @import '../font/HarmonyOS_Sans_SC_Regular/font.css';
-@import '../font/HarmonyOS_Sans_SC_Black/font.css';
+@import '../font/HarmonyOS_Sans_SC_Medium/font.css';
 @import '../font/HarmonyOS_Sans_SC_Bold/font.css';
-@import '../font/HarmonyOS_Sans_SC_Thin/font.css';
-@import '../font/HarmonyOS_Sans_SC_Light/font.css';
 
-/* 覆盖全局字体 */
+/* 覆盖全局字体，切片加载前回退到系统中文字体，避免闪烁时字形差异过大 */
 :root {
-  --vp-sidebar-width: 300px;
-  --vp-font-family-base: 'HarmonyOS Sans SC', sans-serif;
+  --vp-font-family-base: 'HarmonyOS Sans SC', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', system-ui, sans-serif;
+}
+
+/* VitePress 标题默认 -0.02em 字距是为 Inter 设计的，中文会显得拥挤 */
+:lang(zh) .vp-doc :is(h1, h2, h3, h4),
+:lang(zh) .VPHomeHero :is(.name, .text) {
+  letter-spacing: normal;
 }
