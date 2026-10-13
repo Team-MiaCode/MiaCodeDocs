@@ -4,7 +4,7 @@ The Tools menu provides separate audio and video processing menus. Open a saved 
 
 ## FFmpeg
 
-Media processing and video export use FFmpeg. MiaCode searches the application folder, bundled tool locations, and system PATH. `MIACODE_FFMPEG_PATH` can specify its location.
+Media processing and video export use FFmpeg. FFmpeg search locations include the MiaCode folder, bundled tool locations, and system PATH. `MIACODE_FFMPEG_PATH` can specify its location.
 
 Configure the executable according to the path message if a tool reports that FFmpeg is needed.
 

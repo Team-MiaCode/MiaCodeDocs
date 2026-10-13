@@ -1,8 +1,9 @@
 import DefaultTheme from 'vitepress/theme'
-import { h } from 'vue'
+import { defineComponent, h } from 'vue'
 import { InjectionKey, NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 import { NolebaseHighlightTargetedHeading } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
 import MiaFooter from './components/MiaFooter.vue'
+import { useSidebarNavigation } from './sidebarNavigation'
 import './custom.css'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
@@ -19,8 +20,13 @@ export default {
       hideChangelogHeader: true
     })
   },
-  Layout: () => h(DefaultTheme.Layout, null, {
-    'layout-top': () => h(NolebaseHighlightTargetedHeading),
-    'layout-bottom': () => h(MiaFooter)
+  Layout: defineComponent({
+    setup() {
+      const sidebarNavigation = useSidebarNavigation()
+      return () => h(DefaultTheme.Layout, sidebarNavigation, {
+        'layout-top': () => h(NolebaseHighlightTargetedHeading),
+        'layout-bottom': () => h(MiaFooter)
+      })
+    }
   })
 }

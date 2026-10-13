@@ -18,6 +18,6 @@ Restoration covers the entire chart document, including its difficulties. Review
 
 Opening the chart from an abnormal exit may offer a recoverable snapshot. Confirm the prompt, review the restored text, and save.
 
-## Preserve project data
+## Preserve MiaCode data
 
-Copy the `.miacode` directory with the chart folder to preserve backups and project settings. Media `_bak` files restore song and video assets; see [Media backups](/en/miacode/tools/media#backups-and-results).
+Copy the `.miacode` directory with the chart folder to preserve backups and MiaCode settings. Media `_bak` files restore song and video assets; see [Media backups](/en/miacode/tools/media#backups-and-results).

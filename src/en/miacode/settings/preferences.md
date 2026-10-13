@@ -10,7 +10,7 @@ The sidebar has standard and efficient modes. Layout can place the editor before
 
 ## Background
 
-Enable an application background, choose an image, and set image opacity, mask opacity, and blur radius. Scaling options include cover, contain, stretch, center, and repeat, with alignment controls.
+Enable the MiaCode background, choose an image, and set image opacity, mask opacity, and blur radius. Scaling options include cover, contain, stretch, center, and repeat, with alignment controls.
 
 ## Editor
 

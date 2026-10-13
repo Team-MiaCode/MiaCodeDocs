@@ -29,7 +29,7 @@ const isEn = computed(() => lang.value === 'en-US')
       </ul>
     </div>
     <div class="mia-footer-group">
-      <h2>{{ isEn ? 'Project' : '项目' }}</h2>
+      <h2>MiaCode</h2>
       <ul>
         <li>
           <a href="https://github.com/Team-MiaCode/MiaCode">

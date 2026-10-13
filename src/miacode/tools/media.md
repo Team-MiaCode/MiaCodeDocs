@@ -4,7 +4,7 @@
 
 ## FFmpeg
 
-媒体处理与视频导出使用 FFmpeg。MiaCode 会查找程序目录、随包提供的工具位置与系统 PATH；也可通过环境变量 `MIACODE_FFMPEG_PATH` 指定 FFmpeg 路径。
+媒体处理与视频导出使用 FFmpeg。FFmpeg 的查找范围包括 MiaCode 所在目录、随包提供的工具位置与系统 PATH；也可通过环境变量 `MIACODE_FFMPEG_PATH` 指定 FFmpeg 路径。
 
 出现 FFmpeg 路径提示时，按提示配置可执行文件后使用相关工具。
 
