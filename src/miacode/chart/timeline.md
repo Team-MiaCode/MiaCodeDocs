@@ -1,9 +1,27 @@
 # 时间轴
 
-底部面板的时间轴展示歌曲波形与谱面物件，用于查看节拍、定位片段和对照预览。
+底部面板的时间轴显示歌曲波形、节拍线与当前难度的物件。
+
+## 定位与拖动
+
+点击上方的时间刻度，预览会定位到该时间，编辑器跳到对应文本。在物件区域按住 `Ctrl`（macOS 可用 `⌘`）点击，也可按点击位置定位。
+
+拖动波形区域或滚动滚轮可横向浏览。
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/时间轴模块.png" alt="时间轴面板">
-<figcaption>时间轴面板</figcaption>
+<img class="interface-shot" src="/images/时间轴模块.png" alt="包含波形、物件、时间刻度与缩放入口的时间轴">
+<figcaption>时间轴</figcaption>
 </figure>
+
+## 缩放
+
+点击时间轴左上角的百分比选择缩放档位，或打开时间轴设置调整缩放。默认按住 `Ctrl` 向上滚轮放大，向下滚轮缩小；组合键可在[首选项 → 快捷键](/miacode/settings/preferences#快捷键)调整。
+
+## 代码跟随
+
+在时间轴设置中开启 `代码跟随`，播放或定位时编辑器会标示对应的谱面位置。通过同一开关关闭跟随。
+
+## 显示参数
+
+时间轴设置提供波形亮度和小节线亮度。时间轴刷新率在[首选项 → 性能](/miacode/settings/preferences#性能)中设置。
 

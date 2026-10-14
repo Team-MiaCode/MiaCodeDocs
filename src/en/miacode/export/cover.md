@@ -14,14 +14,14 @@ Select a layer to change its position, size, and opacity. Text layers support co
 
 ## Chart frames
 
-Add a chart-frame layer, choose a difficulty, and seek to the moment to display. Play or scrub to inspect the pattern.
+Add a chart-frame layer and choose a difficulty. Playback and the time control set the chart time displayed by the layer.
 
-Inner and outer background options include transparency, images, and PV, allowing chart patterns to be composed with other cover elements.
+Inner and outer background options include transparency, images, and PV.
 
 ## Layouts and presets
 
-Save layout writes the composition to a file for later editing. Save preset stores a reusable layout style for other songs.
+Save layout writes the composition to a file; Open layout loads it. Save preset stores the layout as a style, and applying a preset uses that style for the current cover.
 
 ## Export
 
-Choose the output path and size, then export. Supported formats include PNG, JPG, JPEG, and BMP. Choose PNG for transparency.
+Choose the output path and size, then export. Supported formats include PNG, JPG, JPEG, and BMP. PNG supports transparency.

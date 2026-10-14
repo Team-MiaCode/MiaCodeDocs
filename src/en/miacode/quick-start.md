@@ -1,13 +1,13 @@
 # Quick Start
 
-Create a chart from a song, enter its information, align the beat, and save your work.
+This page covers creating, opening, editing, and saving charts in 2.0.0-alpha.
 
 ## Download and launch
 
-Packages for each platform are on [Download MiaCode](/en/download). Extract the archive after downloading.
+Get a package from [Download MiaCode](/en/download), extract it, and launch the application.
 
-- **Windows**: double-click `MiaCode.exe` in the extracted folder.
-- **macOS**: double-click `MiaCode.app`, or drag it into the Applications folder first. If macOS refuses to open it, run this in Terminal from the extracted folder, then launch again:
+- **Windows**: open `MiaCode.exe` in the extracted folder.
+- **macOS**: open `MiaCode.app`, or move it to Applications. If macOS blocks it through quarantine, run this in Terminal from the extracted folder before launching:
 
   ```bash
   xattr -dr com.apple.quarantine "MiaCode.app"
@@ -15,30 +15,44 @@ Packages for each platform are on [Download MiaCode](/en/download). Extract the 
 
 Linux build instructions are in the repository [README](https://github.com/Team-MiaCode/MiaCode/blob/dev/README_EN.md#linux-advanced-users).
 
-## Create a chart
+## Create or open a chart
 
-### Create from a song
+Choose New on the welcome page or `File → New` and select audio. Supported formats include `.mp3`, `.wav`, `.flac`, and `.ogg`. MiaCode creates `maidata.txt` beside the song and prepares a `track` audio file for preview.
 
-Place the song in the folder intended for the chart. Choose New on the welcome page or use `File → New`, then select an audio file. Supported formats include `.mp3`, `.wav`, `.flac`, and `.ogg`.
-
-MiaCode creates `maidata.txt` beside the song and prepares a `track` audio file for preview.
-
-### Create by dragging an audio file
-
-Drop an audio file into the window to create a chart. If the folder already contains a chart or another track, the dialog offers options such as opening, replacing, or creating a folder. Choose according to the displayed destination.
+Dropping audio into the window creates a chart. If the folder contains a chart or song, the dialog offers options to open, replace, or create a folder.
 
 Open an existing chart with `File → Open`, the recent files list, or by dropping `maidata.txt` into the window.
 
-## Enter information and align the beat
+<span id="create-a-chart"></span>
+<span id="create-from-a-song"></span>
+<span id="create-by-dragging-an-audio-file"></span>
 
-Fill in the title, artist, designer, media, and difficulty level in [Chart information](/en/miacode/chart/information).
+## Select a difficulty and enter information
 
-Open [Latency calibration](/en/miacode/chart/latency-calibration) to enter or detect BPM and offset, then audition the beat against the song. In simai text, BPM is written as `(value)` and subdivision as `{value}`.
+Add or select a difficulty, then fill in its level, title, artist, designer, and media in [Chart information](/en/miacode/chart/information).
 
-## Edit and save
+## Align the beat
 
-Write simai text in the [Text editor](/en/miacode/chart/text-editor), and inspect it with the [Preview](/en/miacode/chart/preview) and [Timeline](/en/miacode/chart/timeline). Analysis entries help locate syntax and pattern issues.
+Open [Latency calibration](/en/miacode/chart/latency-calibration), enter BPM and offset, or use their Auto detect buttons. Start audition plays the song and timing sounds.
 
-`File → Save` saves the current editing section. Use `Save entire document` to save changes across difficulties.
+<span id="enter-information-and-align-the-beat"></span>
 
-When the chart is ready, [export a video](/en/miacode/export/video), [create a cover](/en/miacode/export/cover), or [package a ZIP](/en/miacode/export/zip).
+## Edit and preview
+
+Write simai text in the [Text editor](/en/miacode/chart/text-editor). This text places four Taps at quarter-note intervals at 120 BPM:
+
+```text
+(120){4}1,2,3,4,
+E
+```
+
+`(120)` sets BPM, `{4}` sets the subdivision, commas advance time, and `E` marks the end. With [Completion](/en/miacode/chart/text-editor#completion) enabled, the corresponding opening bracket displays BPM, subdivision, or duration candidates.
+
+The preview toolbar controls playback, pause, and seeking. The [Timeline](/en/miacode/chart/timeline) displays the waveform and notes, [Chart organization](/en/miacode/tools/chart-organization) formats text, and [Syntax & pattern warnings](/en/miacode/chart/validation) lists results for the current difficulty.
+
+## Save
+
+`File → Save` saves the current editing section; Save entire document saves changes across difficulties and the document.
+
+
+<span id="edit-and-save"></span>

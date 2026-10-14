@@ -15,7 +15,7 @@ Chart type supports automatic selection, DX, and SD. Level rendering and separat
 
 ## PV segment and audition
 
-For PV preview style, choose the segment start and inspect it with the range control. Audition the segment to check the picture and music.
+For PV preview style, set the segment start with the range control. Audition plays the selected PV segment.
 
 The start is saved for the chart and shared by its difficulties. Batch items use the start stored for their own chart.
 

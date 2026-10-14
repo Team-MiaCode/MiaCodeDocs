@@ -4,7 +4,7 @@ Open the information page from the Chart sidebar or Tools menu. It manages song 
 
 ## Song fields
 
-Enter the title, artist, and designer. The read-from-audio command reads song information from a media file; review the resulting fields.
+Enter the title, artist, and designer. The read-from-audio command reads song information from a media file and fills the corresponding fields.
 
 Offset corresponds to simai `&first` and is measured in seconds. Count-in controls the beat count before playback. BPM and offset detection are described in [Latency calibration](/en/miacode/chart/latency-calibration).
 
@@ -17,7 +17,7 @@ Offset corresponds to simai `&first` and is measured in seconds. Count-in contro
 
 Select a difficulty to enter its level and designer. Designer management supports separate names for each difficulty or a shared name across difficulties.
 
-These fields appear in difficulty displays, video intros, and cover cards. Review them before exporting.
+These fields appear in difficulty displays, video intros, and cover cards.
 
 ## Jacket and PV
 

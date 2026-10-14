@@ -1,6 +1,6 @@
 # Latency calibration
 
-Use this page to set BPM and chart offset, then audition the beat against the song. Open it from the Chart sidebar or Tools menu.
+Open this page from the Chart sidebar or Tools menu to set BPM and chart offset and play timing sounds.
 
 ## BPM and offset
 
@@ -10,10 +10,10 @@ After setting BPM, choose Auto detect beside offset. Offset is measured in secon
 
 ## Audition
 
-Set count-in and subdivision, then start auditioning. Compare the song's beats with the timing sounds and adjust their volume as needed.
+Set count-in and subdivision, then start auditioning to play the song and timing sounds. Sound volume controls the timing sounds' level.
 
-Treat detection as a starting point. Check BPM when the beat drifts over time, and adjust offset when the time difference stays similar. Songs with tempo changes need BPM directives for their individual sections.
+Section BPM values for songs with tempo changes are set with `(BPM)` directives in chart text.
 
 ## Media timing
 
-Changing offset adjusts chart alignment. To insert silence or black frames at the start of media, use [Prepend blank](/en/miacode/tools/media#prepend-blank), then audition the result.
+Offset changes the timing relationship between the chart and song. [Prepend blank](/en/miacode/tools/media#prepend-blank) modifies media files by adding silence or black frames at the start.

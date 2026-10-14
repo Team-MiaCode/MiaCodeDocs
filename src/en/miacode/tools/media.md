@@ -1,6 +1,6 @@
-# track.mp3 & pv.mp4 tools
+# Audio and video processing
 
-The Tools menu provides separate audio and video processing menus. Open a saved chart so the tools can locate its song and PV.
+The Tools menu provides separate audio and video processing menus. The tools use the song and PV in the opened, saved chart's folder.
 
 ## FFmpeg
 
@@ -14,8 +14,6 @@ Audio prepend inserts silence at the start of `track.mp3`. Video prepend inserts
 
 Duration is calculated as `beats × 60 ÷ BPM`; 4 beats at 120 BPM are 2 seconds. The dialog provides timing detection and backup restoration.
 
-After processing, audition the result in [Latency calibration](/en/miacode/chart/latency-calibration).
-
 ## Sample rate conversion
 
 The audio conversion command processes `track.mp3` at 44100 Hz and saves the original as `track_bak.mp3`.
@@ -24,16 +22,16 @@ The audio conversion command processes `track.mp3` at 44100 Hz and saves the ori
 
 The alignment command compares the PV audio with `track.mp3`, estimates their time difference, and adjusts the video.
 
-PV needs an audio track for analysis. Align and audition before compressing the same video, since compression removes its audio.
+Alignment uses the PV audio track for analysis. Video compression removes the audio track.
 
 ## Compression
 
 Current-video compression targets a size below 20 MB and removes audio. It saves or replaces a sibling `_bak` backup.
 
-Batch compression scans the selected folder and its immediate subfolders for `bg.mp4` or `pv.mp4`. Review the queue, start the task, and read each result. Videos already within the size limit receive the corresponding status.
+Batch compression scans the selected folder and its immediate subfolders for `bg.mp4` or `pv.mp4`. Starting the task displays results for each entry. Videos within the size limit receive the corresponding status.
 
 ## Backups and results
 
-Audio tools use `track_bak.mp3`; video tools use a corresponding `_bak` file. Later processing may replace a backup, so copy an original elsewhere when retaining that version.
+Audio tools use `track_bak.mp3`; video tools use a corresponding `_bak` file. Later processing may replace a backup.
 
-Read the completion message. If the processed file was saved separately, use the path shown there.
+The result message displays the processing status and generated file path.

@@ -1,40 +1,52 @@
 # Preview settings
 
-Open `Preview → Preview settings` to configure visual, gameplay, and skin options. Changes apply to the preview; these appearance options are also available on the video export page.
-
-## Video
-
-Inner and outer brightness control the corresponding background or PV regions. Stage size changes how much of the frame the chart occupies.
-
-Background and PV scaling includes fill, fit, a centered square, and inner-circle fit with outer fill. Choose according to the media aspect ratio and inspect the resulting crop.
-
-Other options include brightness smoothing, timestamps, paused judgment areas, and Touch authoring. See [Touch input](/en/miacode/chart/preview#touch-input) for the editing action.
-
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/预览设置-视频.png" alt="Preview visual settings">
-<figcaption>Preview visual settings</figcaption>
-</figure>
+Open `Preview → Preview settings` to change game, video, and skin options. The video export page provides corresponding output options.
 
 ## Game
 
-Tap and Touch speeds are configured separately. DX and FiNALE slide stacking styles control the order of overlapping slides.
+Tap and Touch have separate flow speeds, controlling how quickly notes approach their judgment positions.
 
-Center display options include combo, achievement, and DX score. Judgment effects and text distance control the type and placement of feedback.
+| Option | Effect |
+| --- | --- |
+| DX slide stacking | Earlier Slides appear on top |
+| FiNALE slide stacking | Later Slides appear on top |
+| Center display | Chooses combo, achievement, DX score, or other information |
+| Judgment effects and text distance | Adjusts judgment feedback and its position |
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/预览设置-游戏.png" alt="Preview gameplay settings">
-<figcaption>Preview gameplay settings</figcaption>
+<img class="interface-shot" src="/images/预览设置-游戏.png" alt="Tap and Touch speeds and game display settings">
+<figcaption>Tap and Touch use separate speeds. Stacking order controls which overlapping Slide appears on top.</figcaption>
 </figure>
+
+## Video
+
+Inner brightness controls the background or PV inside the judgment circle; outer brightness controls the surrounding area. Lower inner brightness to emphasize notes while retaining the outer media. Stage size controls how much of the frame the playfield occupies.
+
+### Background and PV scaling
+
+The diagram uses the same 16:9 sample in four 4:3 frames. Gray areas represent margins. Numbers match the table; the circle marks the inner playfield.
+
+<figure class="doc-figure">
+<img src="/images/background-scale-modes.svg" alt="One sample shown with fill, contain, centered square, and inner-circle contain with outer fill">
+<figcaption>Compare cropping of the colored edges and how much of the frame the sample occupies.</figcaption>
+</figure>
+
+| Number and mode | Effect and use |
+| --- | --- |
+| 1 · Fill with cropping | Covers the frame and crops excess edges; use when frame coverage matters |
+| 2 · Contain | Retains the whole sample with margins when aspect ratios differ |
+| 3 · Centered square | Fits the complete sample inside the frame's centered square |
+| 4 · Inner-circle contain, outer fill | Uses containment inside the circle and a filled layout outside |
+
+Brightness smoothing, timestamps, and paused judgment areas have individual switches. Touch click input enables authoring from the preview; see [Text editor](/en/miacode/chart/text-editor#touch-input).
 
 ## Skin
 
-Choose note skins, chart effects, and judgment-line styles. Open the corresponding directories to manage assets.
-
-HUD fonts are configured by display region, including center display, timestamps, and note statistics. Select an existing font, import a font file, or reset the region's font setting.
+Choose note skins, chart effects, and judgment-line styles, and manage assets with Open directory. HUD fonts are set per region, including center display, timestamps, and note counts. Choose an existing font, import a file, or reset the region's setting.
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/预览设置-皮肤.png" alt="Preview skin settings">
-<figcaption>Preview skin settings</figcaption>
+<img class="interface-shot" src="/images/预览设置-皮肤.png" alt="Note skins, judgment lines, and HUD fonts by region">
+<figcaption>Select a HUD region, then choose or import a font for that region.</figcaption>
 </figure>
 
-Frame rate and decoding options are described in [Preferences → Performance](/en/miacode/settings/preferences#performance). Sound levels are described in [Audio settings](/en/miacode/settings/audio).
+See [Preferences → Performance](/en/miacode/settings/preferences#performance) for frame rates and decoding, and [Audio settings](/en/miacode/settings/audio) for volume.

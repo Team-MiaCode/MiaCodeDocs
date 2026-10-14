@@ -1,26 +1,31 @@
 # Chart preview
 
-The preview displays chart notes, backgrounds, and PV. Seek with the progress bar or timeline while paused to inspect a particular moment.
+The preview displays notes, backgrounds, and PV for the current difficulty.
 
-<figure class="doc-figure doc-figure--portrait">
-<img class="interface-shot" src="/images/预览区.png" alt="Chart preview">
-<figcaption>Chart preview</figcaption>
-</figure>
+## Updates while editing
+
+While playback is paused, editing the current difficulty updates the preview.
 
 ## Playback and seeking
 
-The toolbar provides play, pause, stop, and playback speed controls. Lower the speed or seek to a moment to inspect a passage.
+Use the preview toolbar to play, pause, or stop. Drag the progress bar or click the time ruler above the timeline to seek to that time.
 
-Range playback uses the interval selected on the video export page. See [Range export](/en/miacode/export/video#range-export) to set it.
+<figure class="doc-figure doc-figure--portrait">
+<img class="interface-shot" src="/images/预览区.png" alt="Chart preview with playback controls below">
+<figcaption>Chart preview and playback toolbar</figcaption>
+</figure>
 
-## Panel and appearance
+## Preview modes
 
-Drag panel boundaries to resize the preview. The toolbar also provides detach and dock controls for the preview window.
+Choose Normal rendering or Muri analysis from the rendering-mode menu. Muri analysis displays simulated judgment effects on the notes.
 
-Cropping, brightness, and stage size are configured in [Preview settings](/en/miacode/settings/preview). Canvas and PV frame rates are set in [Preferences → Performance](/en/miacode/settings/preferences#performance).
+Free Aspect controls the canvas aspect ratio, and Hide PV controls background video visibility. Brightness, note speeds, and skins are covered in [Preview settings](/en/miacode/settings/preview).
 
-## Touch input
+## Detach and dock
 
-Enable Touch input in preview settings. Pause playback, keep the desired insertion point in the editor, hold `Ctrl`, and click a Touch region in the preview.
+Drag panel boundaries to resize the editor, preview, and bottom panel. Use the toolbar's detach and dock buttons to move the preview to a separate window or return it to the workspace. Configure the left/right arrangement in [Preferences](/en/miacode/settings/preferences#interface-and-layout).
 
-The corresponding Touch identifier is inserted at the editing position. Click multiple regions to add simultaneous Touch notes; MiaCode inserts `/` separators between them.
+<span id="panel-and-appearance"></span>
+<span id="touch-input"></span>
+
+See [Text editor → Touch input](/en/miacode/chart/text-editor#touch-input) for authoring steps.

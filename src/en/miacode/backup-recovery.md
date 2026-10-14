@@ -1,23 +1,17 @@
-# Backup & recovery
+# Backup and recovery
 
-MiaCode saves automatic backups during editing to recover previous text or changes from an abnormal exit.
+MiaCode saves backups while editing so you can recover earlier text or changes from an abnormal exit.
 
 ## Automatic backups
 
-While the document has changes, the latest snapshot updates after about 2 seconds of idle input. Changed historical snapshots are saved about every 2 minutes, with up to 30 versions retained.
-
-For `maidata.txt`, backups are stored under `.miacode/.autosave/maidata.txt/` in the chart folder. The latest snapshot is `maidata.txt.bak`, and historical versions are in `history`.
+The latest snapshot updates about 2 seconds after input stops. A history version is saved about every 2 minutes when content changed, with up to 30 versions. Backups for `maidata.txt` are stored in `.miacode/.autosave/maidata.txt/`; the latest snapshot is `maidata.txt.bak` and history is in the `history` subdirectory.
 
 ## Restore a version
 
-Use `File → Restore backup` to view timestamped records. Select a version and confirm to load it into the current document.
-
-Restoration covers the entire chart document, including its difficulties. Review the content and use `File → Save entire document` to write it to the chart file.
+Open `File → Restore backup` to view records by time. Choose a version and confirm to load it into the current document. Recovery covers the whole document; `Save entire document` writes the restored content to the chart file.
 
 ## Abnormal exit
 
-Opening the chart from an abnormal exit may offer a recoverable snapshot. Confirm the prompt, review the restored text, and save.
+Open the chart from the abnormal session. A recoverable snapshot displays a recovery prompt. Choosing recovery loads the snapshot into the current document; saving writes it to the chart file.
 
-## Preserve MiaCode data
-
-Copy the `.miacode` directory with the chart folder to preserve backups and MiaCode settings. Media `_bak` files restore song and video assets; see [Media backups](/en/miacode/tools/media#backups-and-results).
+The `.miacode` directory stores local backups and MiaCode settings. Media tools' `_bak` files restore processed media.
