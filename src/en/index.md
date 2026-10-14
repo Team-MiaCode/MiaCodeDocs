@@ -7,7 +7,7 @@ titleTemplate: simai chart creation tool
 hero:
   name: MiaCode
   text: A maimai chart editor
-  tagline: Write, preview, validate, and export simai charts in a single workspace.
+  tagline: Text editing, live preview, chart analysis, organization, and export.
   actions:
     - theme: brand
       text: Download MiaCode
@@ -22,32 +22,32 @@ hero:
 features:
   - icon:
       src: /icons/editor.svg
-    title: Edit with live preview
-    details: Write simai text and watch the preview update. Drag the progress bar or timeline to inspect any moment.
+    title: Edit and preview
+    details: The editor supports completion and selection tools. Preview updates with chart text.
     link: /en/miacode/chart/text-editor
     linkText: Text editor
   - icon:
       src: /icons/check.svg
-    title: Syntax & pattern checks
-    details: Lists parse errors and play risks. Click an entry to jump to its line, column, and preview time.
-    link: /en/miacode/chart/validation
-    linkText: Learn more
-  - icon:
-      src: /icons/export.svg
-    title: Video & cover export
-    details: Render chart preview videos with range and batch export, and design submission covers with layers.
-    link: /en/miacode/export/video
-    linkText: Export guide
+    title: Timeline and organization
+    details: The timeline displays waveforms and notes. Organization formats subdivisions, lines, and spacing.
+    link: /en/miacode/chart/timeline
+    linkText: Timeline guide
   - icon:
       src: /icons/cloud.svg
-    title: Chart upload & download
-    details: Search and download charts from the server, or queue local charts for publishing.
-    link: /en/miacode/tools/download
-    linkText: Tools guide
+    title: Syntax and pattern checks
+    details: Lists syntax and pattern results. Selecting an entry navigates to its text location and preview time.
+    link: /en/miacode/chart/validation
+    linkText: Checks guide
+  - icon:
+      src: /icons/export.svg
+    title: Video and cover export
+    details: Export a full song or passage and compose covers with chart frames, images, and text.
+    link: /en/miacode/export/video
+    linkText: Export guide
 ---
 
 <section class="home-showcase">
-  <h2>One workspace, from writing to export</h2>
-  <p>The left bar switches between charts, settings, export, and tools. The main area holds the editor and chart preview; the bottom panel shows the timeline and checks.</p>
-  <img src="/images/首页.png" alt="MiaCode workspace">
+  <h2>Interface</h2>
+  <p>The main area displays the text editor and chart preview. The bottom panel provides the timeline, syntax checks, and pattern analysis. The sidebar switches between charts, export, settings, and tools.</p>
+  <img src="/images/首页.png" alt="MiaCode editor, preview, and timeline workspace">
 </section>

@@ -1,17 +1,19 @@
-# Chart download
+# Chart download and upload
 
-Open `Tools → Chart download` to query server charts and download them locally.
+## Download
 
-## Query
+Open `Tools → Chart download`. Enter a user ID, tag, or song title, choose a date range and sort order, and search. Click a result to open its preview and select charts.
 
-Enter a user ID, tag, or song title, choose dates and sorting, then query. Select charts from the results.
+Choose an output folder and whether to download PV, then start the download. The list shows progress and logs; resume a paused task with Continue download.
 
-Use case and fuzzy-match options to refine the query. Refresh from server retrieves server results; connection probing shows connectivity.
+## Upload
 
-## Download and preview
+Open `Tools → Chart upload`, enter the username and password, and sign in. Remember account is available when secure storage is supported.
 
-Choose a destination and select charts. Choose whether to include PV or create an additional ZIP after success, then download the selection.
+### Upload queue
 
-The results provide online preview for inspecting charts. Progress and logs show task state. Use Continue download when the task is paused.
+Choose the chart root and select Add to queue. The list displays folders, files, paths, and states. Entries can be reordered or removed.
 
-See [Chart upload](/en/miacode/tools/upload) to publish local charts.
+### Results
+
+Start upload to display progress and logs. The completed task reports successful, failed, and pending confirmation counts. “Server result needs confirmation” means the entry's upload result requires confirmation from server records.

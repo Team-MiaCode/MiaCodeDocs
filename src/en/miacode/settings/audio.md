@@ -1,31 +1,27 @@
 # Audio settings
 
-Open `Preview → Audio settings`. Drag a slider to change a channel's level, double-click its percentage to enter a value, or use the speaker icon to toggle mute.
+Open `Preview → Audio settings` to adjust preview and intro sounds. Drag a slider, double-click its percentage to enter a value, or click the speaker icon to mute a channel.
 
-## Channels
+## Sound channels
 
-| Channel | Sound |
+| Channel | Controls |
 | --- | --- |
-| Global | Overall mix |
+| Global volume | Overall preview volume |
 | Track | Song audio |
-| Answer | Beat timing sounds |
+| Perfect sound | Beat confirmation sound |
 | Tap, EX, Break | Corresponding note sounds |
-| Break Slide, Slide | Corresponding slide sounds |
+| Break Slide, Slide | Slide sounds |
 | Touch, Hanabi | Touch and firework sounds |
-| Export intro | Intro sound |
+| Intro export | Intro sounds |
 
-Channels with a sample sound play it after adjustment so you can judge the level. Adjust the song level during preview playback.
-
-The Break star tail judgment option controls the tail judgment sound for Break Slides.
+Changing a channel with a preview sound plays that sound. Mute Break Star Tail Judgment Sound controls the judgment sound at the end of a Break Slide.
 
 <figure class="doc-figure doc-figure--portrait">
-<img class="interface-shot" src="/images/音频设置页面.png" alt="Audio mixer">
-<figcaption>Audio mixer</figcaption>
+<img class="interface-shot" src="/images/音频设置页面.png" alt="Preview audio channels and volume controls">
+<figcaption>Adjust or mute each sound type independently.</figcaption>
 </figure>
 
 ## Local defaults
 
-Levels apply to the current chart. Save the mix as local defaults to reuse it on this computer, or restore local defaults to apply the saved mix to the current chart.
-
-BPM and chart offset are set in [Latency calibration](/en/miacode/chart/latency-calibration).
+Volume changes apply to the current chart. Set as local default stores the local value; Restore local defaults applies it to the current chart. Set BPM and offset in [Latency calibration](/en/miacode/chart/latency-calibration).
 

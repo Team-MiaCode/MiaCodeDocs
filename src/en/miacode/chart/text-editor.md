@@ -1,68 +1,63 @@
 # Text editor
 
-Select a difficulty in the sidebar to edit its simai text. Preview and analysis update as the text changes.
+Select or add a difficulty to write simai text. Preview and analysis update as you edit.
 
-## Find and replace
+## Completion
 
-Use `Edit → Find` or `Ctrl+F` (`⌘F` on macOS) to open the find and replace panel. Enter a query, browse matches with the previous and next controls, then replace the current match or all matches.
+Enable completion in [Preferences → Editor](/en/miacode/settings/preferences#completion). Typing `[`, `{`, or `(` opens the corresponding candidates. Typed text filters the list.
 
-With the find field focused, press `Enter` to find the next match, `Shift+Enter` to find the previous match, or `Esc` to close the panel.
+| Input | Candidates |
+| --- | --- |
+| `[` | Durations for Hold, Slide, and other sustained notes |
+| `{` | Beat subdivisions |
+| `(` | The song BPM and BPM values used in the current difficulty's text, with duplicates merged |
 
-Match case and whole-word options help target particular text.
+Use the arrow keys to choose a candidate, `Enter` or `Tab` to accept it, and `Esc` to dismiss the list. Typing `{` and choosing `16` inserts `{16}`.
 
-## Completion and input settings
+Add, reorder, and restore duration and subdivision candidates in [Custom candidates](/en/miacode/settings/preferences#completion). BPM candidates come from the chart information and current text; custom candidate settings apply to durations and subdivisions.
 
-The editor offers completion candidates for chart text, including durations. Choose a candidate to complete the entry. Enable completion in [Preferences → Editor](/en/miacode/settings/preferences#editor).
+## Selection beats
 
-The same page controls input methods, full-width character correction, font size, line spacing, and wrapping. Selection beat display shows the length of the selected passage.
-
-## Overview ruler
-
-The overview ruler sits beside the editor's vertical scrollbar and compresses chart diagnostics into colored marks: yellow for warnings, blue for bookmarks, and red for errors or pattern warnings. A horizontal mark shows the current caret or follow position. Use it with the scrollbar to locate those parts of the chart, or turn it off in Preferences → Editor to hide the column.
-
-## Bookmarks
-
-Type `||` on the line you want to mark, followed by a passage name or a note. Text from `||` to the end of the line is treated as a comment, which the editor uses to create a bookmark.
-
-For example, `|| [Chorus] Revise the rhythm here` creates a bookmark titled “Chorus” with an editing note. Text in square brackets sets the bookmark title; the remaining text provides additional detail.
-
-Click an entry in the bookmark list to jump to its line. The bookmark menu in the line-number margin lets you add, rename, or delete bookmarks; these operations edit the comment on that line.
+Enable selection beat display in Preferences to show the selected text's beat count. A selection that cuts through a note or syntax element is marked as approximate.
 
 ## Selection tools
 
-Select chart text and choose a command from the Transform menu or context menu. Mirrors, rotations, subdivisions, and note-property commands act on the selection.
-
-<div class="doc-figure-grid">
-<figure class="doc-figure doc-figure--compact">
-<img class="interface-shot" src="/images/调整菜单.png" alt="Chart transform menu">
-<figcaption>Chart transform menu</figcaption>
-</figure>
-<figure class="doc-figure doc-figure--compact">
-<img class="interface-shot" src="/images/右键菜单.png" alt="Editor context menu">
-<figcaption>Editor context menu</figcaption>
-</figure>
-</div>
+Select chart text and choose a command from `Transform` or the context menu. Note transforms affect complete selected notes, including their positions, paths, and durations. Text formatting is covered in [Chart organization](/en/miacode/tools/chart-organization).
 
 ### Mirrors and rotations
 
-Commands include horizontal and vertical mirrors, 180° rotation, and clockwise or counterclockwise 45° rotation.
+Horizontal and vertical mirrors, 180° rotation, and clockwise or counterclockwise 45° rotation change the selected Tap and Touch positions and Slide paths.
 
 ### Note subdivision adjustment
 
-Subdivision commands adjust subdivision and comma spacing together. Raising by one step multiplies the subdivision by 2; raising by half a step multiplies it by 1.5.
+Raising by one step doubles the subdivision and adds comma spacing to retain the original beat positions:
 
-For example, raising `{16}1,2,` by one step produces `{32}1,,2,,`. Updating both the subdivision and spacing keeps notes at their corresponding beats.
+| Before | After raising one step |
+| --- | --- |
+| `{16}1,2,` | `{32}1,,2,,` |
 
-### Clear all
+Raising half a step multiplies the subdivision by 1.5; lowering applies the reverse adjustment.
 
-Clear complete selected notes while retaining timing separators. Use this to keep a rhythm framework while writing a new pattern.
+### Note transforms
 
-### Reset objects
+| Command | Result |
+| --- | --- |
+| Clear all | Removes complete selected notes while retaining commas and other timing structure |
+| Reset objects | Replaces complete selected notes with Tap 1 while retaining timing structure |
+| `Transform → More` | Provides Break, Ex, Firework, and random-direction commands |
 
-Reset complete selected notes to Tap 1 while retaining the timing structure.
+## Touch input
 
-### Note properties and random rotation
+Enable Touch click input in [Preview settings](/en/miacode/settings/preview#video). Pause playback, place the editor caret at the insertion point, hold `Ctrl`, and click a Touch region in the preview.
 
-The additional transform commands toggle Break, Ex, and Firework attributes or randomize directions.
+Clicking A1 inserts `A1`. Clicking A2 next produces `A1/A2`. Simultaneous Touch notes are separated by `/`.
 
-See [Chart organization](/en/miacode/tools/chart-organization) for formatting options and [Chart preview](/en/miacode/chart/preview#touch-input) for Touch authoring.
+## Bookmarks
+
+Entering `|| [Chorus] Revise the rhythm here` creates a bookmark titled “Chorus”, with the remaining text as a note.
+
+Click a bookmark to jump to its line. Add, rename, and delete commands in the line-number margin edit that line's comment.
+
+## Find and replace
+
+Open `Edit → Find` or press `Ctrl+F` (`⌘F` on macOS) to find or replace the current match or all matches. Match case and whole-word options refine the query. `Enter` finds the next match, `Shift+Enter` finds the previous match, and `Esc` closes the panel.
