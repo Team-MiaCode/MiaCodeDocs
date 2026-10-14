@@ -3,6 +3,7 @@ import { defineComponent, h } from 'vue'
 import { InjectionKey, NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 import { NolebaseHighlightTargetedHeading } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
 import MiaFooter from './components/MiaFooter.vue'
+import RandomTagline from './components/RandomTagline.vue'
 import { useSidebarNavigation } from './sidebarNavigation'
 import './custom.css'
 import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
@@ -25,6 +26,7 @@ export default {
       const sidebarNavigation = useSidebarNavigation()
       return () => h(DefaultTheme.Layout, sidebarNavigation, {
         'layout-top': () => h(NolebaseHighlightTargetedHeading),
+        'home-hero-info-after': () => h(RandomTagline),
         'layout-bottom': () => h(MiaFooter)
       })
     }

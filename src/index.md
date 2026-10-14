@@ -7,7 +7,6 @@ titleTemplate: simai 谱面创作工具
 hero:
   name: MiaCode
   text: maimai 谱面创作工具
-  tagline: 文字编辑、实时预览、语法与无理检测、视频与封面导出，在同一个工作区完成。
   actions:
     - theme: brand
       text: 下载 MiaCode
