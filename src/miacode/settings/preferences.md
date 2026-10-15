@@ -18,6 +18,10 @@
 
 ### 自动补全
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/completion_settings.png')" target="_blank"><img class="interface-shot" src="/images/completion_settings.png" alt="自定义补全候选" loading="lazy"></a>
+</figure>
+
 开启 `自动补全` 后展开 `自定义候选`，分别管理时值和节拍分音。填写时值 `4:1`、分音 `16` 等候选内容，括号由补全操作添加。BPM 候选由整曲 BPM 与当前难度文本生成。
 
 在列表末尾输入候选，按 `Enter` 或离开输入框保存；拖动候选调整顺序，也可删除候选。`恢复默认` 会恢复该组的默认候选，按确认窗口选择。
@@ -63,6 +67,10 @@
 应用背景用于软件界面；谱面背景与 PV 的画面效果见[预览设置](/miacode/settings/preview#视频)。
 
 ## 更新
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/update_settings.png')" target="_blank"><img class="interface-shot" src="/images/update_settings.png" alt="更新设置" loading="lazy"></a>
+</figure>
 
 选择正式版或预发布版通道，设置启动时检查更新，或使用 `立即检查` 查看所选通道的结果。
 

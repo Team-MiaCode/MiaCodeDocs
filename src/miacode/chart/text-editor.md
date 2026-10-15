@@ -26,14 +26,17 @@
 
 ## 选区拍数
 
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/selection_beats.png')" target="_blank"><img class="interface-shot" src="/images/selection_beats.png" alt="选区与状态栏拍数" loading="lazy"></a>
+</figure>
+
 在首选项中开启 `显示选区拍数`，编辑器会显示选中文本对应的拍数。选区截断物件或语法要素时，数值会带有近似提示。
 
+## 选区调整
 
 <figure class="doc-figure">
 <a :href="$withBase('/images/context_menu.png')" target="_blank"><img class="interface-shot" src="/images/context_menu.png" alt="选区调整菜单" loading="lazy"></a>
 </figure>
-
-## 选区调整
 
 选中谱面文本，从 `调整` 菜单或右键菜单选择操作。物件变换作用于选区中的完整物件，包含编号、路径和时值。文本排版见[谱面整理](/miacode/tools/chart-organization)。
 
@@ -61,11 +64,23 @@
 
 ## Touch 点击输入 {#touch-点击输入}
 
-在[预览设置](/miacode/settings/preview#视频)开启 `启用touch点击输入`。暂停播放，将编辑器光标放到插入位置，按住 `Ctrl`，点击预览中的 Touch 区域。
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/touch_input.png')" target="_blank"><img class="interface-shot" src="/images/touch_input.png" alt="Touch 点击输入区域" loading="lazy"></a>
+</figure>
+
+在[预览设置](/miacode/settings/preview#视频)开启 `启用touch点击输入`。暂停播放，将编辑器光标放到插入位置，按住 `Ctrl`（macOS 为 `⌘`），点击预览中的 Touch 区域。
 
 点击 A1 会插入 `A1`，连续点击 A2 会得到 `A1/A2`。多押 Touch 之间由 `/` 分隔。
 
 ## 书签
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/bookmarks.png')" target="_blank"><img class="interface-shot" src="/images/bookmarks.png" alt="段落注释与书签列表" loading="lazy"></a>
+</figure>
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/bookmark_edit.png')" target="_blank"><img class="interface-shot" src="/images/bookmark_edit.png" alt="重命名书签" loading="lazy"></a>
+</figure>
 
 在行内输入 `|| [副歌] 调整此处的节奏`，会生成标题为“副歌”的书签，其余内容作为备注。
 
@@ -78,7 +93,6 @@
 </figure>
 
 使用 `编辑 → 查找` 或 `Ctrl+F`（macOS 为 `⌘F`）打开面板，查找或替换当前匹配项、全部匹配项。可按需选择区分大小写和全词匹配；`Enter` 查找下一项，`Shift+Enter` 查找上一项，`Esc` 关闭面板。
-
 
 ## 调整快捷键
 

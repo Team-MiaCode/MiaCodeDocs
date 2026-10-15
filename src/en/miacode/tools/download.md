@@ -1,6 +1,5 @@
 # Chart download and upload
 
-
 <figure class="doc-figure doc-figure--window">
 <a :href="$withBase('/images/net_download.png')" target="_blank"><img class="interface-shot" src="/images/net_download.png" alt="Net chart download" loading="lazy"></a>
 </figure>
@@ -11,12 +10,11 @@ Open `Tools → Chart download`. Enter a user ID, tag, or song title, choose a d
 
 Choose an output folder and whether to download PV, then start the download. Select Create ZIP after success to save an archive alongside the chart folder. Use Select All for the query results and View Log for task details. The list shows progress and logs; resume a paused task with Continue download.
 
+## Upload
 
 <figure class="doc-figure doc-figure--window">
 <a :href="$withBase('/images/net_upload.png')" target="_blank"><img class="interface-shot" src="/images/net_upload.png" alt="Net chart upload" loading="lazy"></a>
 </figure>
-
-## Upload
 
 Open `Tools → Chart upload`, enter the username and password, and sign in. Remember account is available when secure storage is supported.
 

@@ -18,6 +18,10 @@ Open Preferences from the main toolbar's settings entry. Changes apply and are s
 
 ### Completion
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/completion_settings.png')" target="_blank"><img class="interface-shot" src="/images/completion_settings.png" alt="Custom completion candidates" loading="lazy"></a>
+</figure>
+
 Enable completion and expand Custom candidates to manage durations and subdivisions separately. Enter candidate content such as `4:1` for a duration or `16` for a subdivision; completion adds the brackets. BPM candidates come from the song BPM and current difficulty's text.
 
 Enter a candidate at the end of the list and press `Enter` or leave the field to save it. Drag to reorder or delete a candidate. Restore defaults resets that group's candidates after confirmation.
@@ -63,6 +67,10 @@ Enable the application background, choose an image, and adjust opacity, mask, an
 This background belongs to the application interface. Configure chart backgrounds and PV appearance in [Preview settings](/en/miacode/settings/preview#video).
 
 ## Updates
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/update_settings.png')" target="_blank"><img class="interface-shot" src="/images/update_settings.png" alt="Update settings" loading="lazy"></a>
+</figure>
 
 Choose a stable or prerelease channel, enable startup checks, or use Check now to view results for the selected channel.
 

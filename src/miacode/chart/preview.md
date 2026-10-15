@@ -17,7 +17,15 @@
 
 ## 预览模式
 
-在预览的渲染模式菜单中选择 `常规渲染` 或 `无理检测`。无理检测将会使配置获得被判定效果。
+<figure class="doc-figure">
+<a :href="$withBase('/images/preview_modes.png')" target="_blank"><img class="interface-shot" src="/images/preview_modes.png" alt="预览渲染模式" loading="lazy"></a>
+</figure>
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/preview_canvas.png')" target="_blank"><img class="interface-shot" src="/images/preview_canvas.png" alt="画布比例与 PV 菜单" loading="lazy"></a>
+</figure>
+
+在预览右上角的渲染模式菜单中选择 `常规渲染` 或 `无理检测`。
 
 画布菜单中的 `自由比例` 控制画布比例，`隐藏PV` 控制背景视频显示。背景亮度、流速与皮肤见[预览设置](/miacode/settings/preview)。
 

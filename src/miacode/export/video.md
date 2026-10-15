@@ -17,6 +17,10 @@
 
 ## 区间导出
 
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/export_range.png')" target="_blank"><img class="interface-shot" src="/images/export_range.png" alt="导出区间与区间播放" loading="lazy"></a>
+</figure>
+
 在输出页输入开始、结束时间，或拖动区间控件的两端，设置视频的导出范围。常规区间下限为 5 秒；歌曲短于 5 秒时使用可用时长。
 
 在编辑器选中文本，右键选择 `导出所选区间`，会将选区对应的时间应用到导出设置。

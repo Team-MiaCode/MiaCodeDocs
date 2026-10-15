@@ -6,6 +6,10 @@ Choose an output location. The archive uses the current workspace's chart text, 
 
 ## Included files
 
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/package_zip.png')" target="_blank"><img class="interface-shot" src="/images/package_zip.png" alt="ZIP output location" loading="lazy"></a>
+</figure>
+
 The archive contains chart text and the resolved song audio, jacket, and PV located beside the chart. Common names are `maidata.txt`, `track.mp3`, `bg.jpg`, and `pv.mp4`; assets retain their actual filenames.
 
 PV uses video in the chart folder. Its reference path is set in [Chart information](/en/miacode/chart/information).

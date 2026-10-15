@@ -17,6 +17,10 @@ The export page provides these parameters:
 
 ## Range export
 
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/export_range.png')" target="_blank"><img class="interface-shot" src="/images/export_range.png" alt="Export range and range playback" loading="lazy"></a>
+</figure>
+
 Enter start and end times or drag the range handles to set the export interval. The normal minimum is 5 seconds; songs shorter than 5 seconds use their available duration.
 
 Select text in the editor and choose Export selected range from its context menu to apply the selection's times to the export settings.

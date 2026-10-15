@@ -21,6 +21,14 @@ Linux build instructions are in the repository [README](https://github.com/Team-
 
 ## Create or open a chart
 
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/welcome.png')" target="_blank"><img class="interface-shot" src="/images/welcome.png" alt="Welcome page" loading="lazy"></a>
+</figure>
+
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/new_audio.png')" target="_blank"><img class="interface-shot" src="/images/new_audio.png" alt="Select audio for a new chart" loading="lazy"></a>
+</figure>
+
 Choose New on the welcome page or `File → New` and select audio. Supported formats include `.mp3`, `.wav`, `.flac`, and `.ogg`. MiaCode creates `maidata.txt` beside the song and prepares a `track` audio file for preview.
 
 Dropping audio into the window creates a chart. If the folder contains a chart or song, the dialog offers options to open, replace, or create a folder.
@@ -33,15 +41,27 @@ Open an existing chart with `File → Open`, the recent files list, or by droppi
 
 ## Select a difficulty and enter information
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/information.png')" target="_blank"><img class="interface-shot" src="/images/information.png" alt="Chart information" loading="lazy"></a>
+</figure>
+
 Add or select a difficulty, then fill in its level, title, artist, designer, and media in [Chart information](/en/miacode/chart/information).
 
 ## Align the beat
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/latency.png')" target="_blank"><img class="interface-shot" src="/images/latency.png" alt="BPM and offset calibration" loading="lazy"></a>
+</figure>
 
 Open [Latency calibration](/en/miacode/chart/latency-calibration), enter BPM and offset, or use their Auto detect buttons. Start audition plays the song and timing sounds.
 
 <span id="enter-information-and-align-the-beat"></span>
 
 ## Edit and preview
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/text_editor.png')" target="_blank"><img class="interface-shot" src="/images/text_editor.png" alt="Chart text editing" loading="lazy"></a>
+</figure>
 
 Write simai text in the [Text editor](/en/miacode/chart/text-editor). This text places four Taps at quarter-note intervals at 120 BPM:
 
@@ -56,7 +76,10 @@ The preview toolbar controls playback, pause, and seeking. The [Timeline](/en/mi
 
 ## Save
 
-`File → Save` saves the current editing section; Save entire document saves changes across difficulties and the document.
+<figure class="doc-figure">
+<a :href="$withBase('/images/save_toolbar.png')" target="_blank"><img class="interface-shot" src="/images/save_toolbar.png" alt="Save and Save entire document" loading="lazy"></a>
+</figure>
 
+`File → Save` saves the current editing section; Save entire document saves changes across difficulties and the document.
 
 <span id="edit-and-save"></span>

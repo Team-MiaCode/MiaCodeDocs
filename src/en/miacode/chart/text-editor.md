@@ -26,6 +26,10 @@ Add, reorder, and restore duration and subdivision candidates in [Custom candida
 
 ## Selection beats
 
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/selection_beats.png')" target="_blank"><img class="interface-shot" src="/images/selection_beats.png" alt="Selection and beat count in the status bar" loading="lazy"></a>
+</figure>
+
 Enable selection beat display in Preferences to show the selected text's beat count. A selection that cuts through a note or syntax element is marked as approximate.
 
 ## Selection tools
@@ -56,11 +60,23 @@ Raising half a step multiplies the subdivision by 1.5; lowering applies the reve
 
 ## Touch input
 
-Enable Touch click input in [Preview settings](/en/miacode/settings/preview#video). Pause playback, place the editor caret at the insertion point, hold `Ctrl`, and click a Touch region in the preview.
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/touch_input.png')" target="_blank"><img class="interface-shot" src="/images/touch_input.png" alt="Touch input regions" loading="lazy"></a>
+</figure>
+
+Enable Touch click input in [Preview settings](/en/miacode/settings/preview#video). Pause playback, place the editor caret at the insertion point, hold `Ctrl` (`⌘` on macOS), and click a Touch region in the preview.
 
 Clicking A1 inserts `A1`. Clicking A2 next produces `A1/A2`. Simultaneous Touch notes are separated by `/`.
 
 ## Bookmarks
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/bookmarks.png')" target="_blank"><img class="interface-shot" src="/images/bookmarks.png" alt="Section comments and bookmarks" loading="lazy"></a>
+</figure>
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/bookmark_edit.png')" target="_blank"><img class="interface-shot" src="/images/bookmark_edit.png" alt="Rename bookmark" loading="lazy"></a>
+</figure>
 
 Entering `|| [Chorus] Revise the rhythm here` creates a bookmark titled “Chorus”, with the remaining text as a note.
 

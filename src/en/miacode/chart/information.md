@@ -15,6 +15,10 @@ Offset corresponds to simai `&first` and is measured in seconds. Count-in contro
 
 ## Difficulties and designers
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/designer_names.png')" target="_blank"><img class="interface-shot" src="/images/designer_names.png" alt="Designer name management" loading="lazy"></a>
+</figure>
+
 Select a difficulty to enter its level and designer. Designer management supports separate names for each difficulty or a shared name across difficulties.
 
 These fields appear in difficulty displays, video intros, and cover cards.

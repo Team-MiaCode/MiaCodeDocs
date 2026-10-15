@@ -17,7 +17,15 @@ Use the preview toolbar to play, pause, or stop. Drag the progress bar or click 
 
 ## Preview modes
 
-Choose Normal rendering or Muri analysis from the rendering-mode menu. Muri analysis displays simulated judgment effects on the notes.
+<figure class="doc-figure">
+<a :href="$withBase('/images/preview_modes.png')" target="_blank"><img class="interface-shot" src="/images/preview_modes.png" alt="Preview rendering modes" loading="lazy"></a>
+</figure>
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/preview_canvas.png')" target="_blank"><img class="interface-shot" src="/images/preview_canvas.png" alt="Canvas aspect and PV menu" loading="lazy"></a>
+</figure>
+
+Choose Normal rendering or Muri analysis from the rendering-mode menu at the top right of the preview.
 
 Free Aspect controls the canvas aspect ratio, and Hide PV controls background video visibility. Brightness, note speeds, and skins are covered in [Preview settings](/en/miacode/settings/preview).
 

@@ -49,10 +49,12 @@
 }
 
 .home-showcase {
-    max-width: 1152px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 72px 24px 0;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
 }
 
 .home-showcase img {
@@ -61,9 +63,9 @@
     height: auto;
 }
 
-.home-showcase .showcase-dark { display: none; }
-.dark .home-showcase .showcase-dark { display: block; }
-.dark .home-showcase .showcase-light { display: none; }
+@media (max-width: 960px) {
+    .home-showcase { grid-template-columns: minmax(0, 1fr); }
+}
 
 .vp-doc .doc-figure--window .interface-shot {
     border: 0;

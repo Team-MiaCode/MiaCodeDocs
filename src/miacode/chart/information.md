@@ -15,6 +15,10 @@
 
 ## 难度与谱师
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/designer_names.png')" target="_blank"><img class="interface-shot" src="/images/designer_names.png" alt="谱师名义管理" loading="lazy"></a>
+</figure>
+
 选择难度后，可以填写该难度的等级与谱师。通过 `谱师名义管理` 分别设置各难度的署名，或选择让各难度使用同一个谱师名义。
 
 这些信息用于难度显示、视频片头和封面卡片。

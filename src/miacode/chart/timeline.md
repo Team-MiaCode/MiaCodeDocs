@@ -15,6 +15,10 @@
 
 ## 缩放
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/timeline_zoom.png')" target="_blank"><img class="interface-shot" src="/images/timeline_zoom.png" alt="时间轴缩放菜单" loading="lazy"></a>
+</figure>
+
 点击时间轴左上角的百分比选择缩放档位，或打开时间轴设置调整缩放。默认按住 `Ctrl` 向上滚轮放大，向下滚轮缩小；组合键可在[首选项 → 快捷键](/miacode/settings/preferences#快捷键)调整。
 
 ## 代码跟随
@@ -22,6 +26,10 @@
 在时间轴设置中开启 `代码跟随`，播放或定位时编辑器会标示对应的谱面位置。通过同一开关关闭跟随。
 
 ## 显示参数
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/timeline_settings.png')" target="_blank"><img class="interface-shot" src="/images/timeline_settings.png" alt="时间轴亮度与代码跟随" loading="lazy"></a>
+</figure>
 
 时间轴设置提供波形亮度和小节线亮度。时间轴刷新率在[首选项 → 性能](/miacode/settings/preferences#性能)中设置。
 
