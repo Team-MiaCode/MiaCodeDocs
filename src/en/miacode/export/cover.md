@@ -2,6 +2,11 @@
 
 Open `Export → Cover export` to compose a publishing cover from song information, images, text, and chart frames.
 
+
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/cover_editor.png')" target="_blank"><img class="interface-shot" src="/images/cover_editor.png" alt="Cover editor" loading="lazy"></a>
+</figure>
+
 ## Canvas and background
 
 Choose a canvas preset with a 1:1, 4:3, or 16:9 aspect ratio. Use the jacket, a custom image, or transparency for the background, and adjust brightness or blur.

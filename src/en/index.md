@@ -47,7 +47,6 @@ features:
 ---
 
 <section class="home-showcase">
-  <h2>Interface</h2>
-  <p>The main area displays the text editor and chart preview. The bottom panel provides the timeline, syntax checks, and pattern analysis. The sidebar switches between charts, export, settings, and tools.</p>
-  <img src="/images/首页.png" alt="MiaCode editor, preview, and timeline workspace">
+  <a class="showcase-dark" :href="$withBase('/images/main_dark.png')" target="_blank"><img src="/images/main_dark.png" alt="MiaCode dark theme" width="2864" height="1864"></a>
+  <a class="showcase-light" :href="$withBase('/images/main_light.png')" target="_blank"><img src="/images/main_light.png" alt="MiaCode light theme with detached preview" width="2864" height="1864"></a>
 </section>

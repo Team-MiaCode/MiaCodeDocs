@@ -2,7 +2,15 @@
 
 选择或添加难度后，在编辑器中编写 simai 文本。预览与检测结果随内容更新。
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/text_editor.png')" target="_blank"><img class="interface-shot" src="/images/text_editor.png" alt="文字编辑器" loading="lazy"></a>
+</figure>
+
 ## 自动补全
+
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/completion.png" alt="自动补全候选" loading="lazy">
+</figure>
 
 在[首选项 → 编辑器](/miacode/settings/preferences#自动补全)开启 `自动补全`。输入 `[`、`{` 或 `(` 时，编辑器会显示对应候选，输入内容可筛选候选。
 
@@ -19,6 +27,11 @@
 ## 选区拍数
 
 在首选项中开启 `显示选区拍数`，编辑器会显示选中文本对应的拍数。选区截断物件或语法要素时，数值会带有近似提示。
+
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/context_menu.png')" target="_blank"><img class="interface-shot" src="/images/context_menu.png" alt="选区调整菜单" loading="lazy"></a>
+</figure>
 
 ## 选区调整
 
@@ -60,5 +73,21 @@
 
 ## 查找与替换
 
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/find_replace.png" alt="查找与替换" loading="lazy">
+</figure>
+
 使用 `编辑 → 查找` 或 `Ctrl+F`（macOS 为 `⌘F`）打开面板，查找或替换当前匹配项、全部匹配项。可按需选择区分大小写和全词匹配；`Enter` 查找下一项，`Shift+Enter` 查找上一项，`Esc` 关闭面板。
 
+
+## 调整快捷键
+
+| 操作 | 默认快捷键 | macOS |
+| --- | --- | --- |
+| 左右镜像 | `Ctrl+J` | `⌘J` |
+| 上下镜像 | `Ctrl+K` | `⌘K` |
+| 旋转 180° | `Ctrl+L` | `⌘L` |
+| 逆时针旋转 45° | `Ctrl+;` | `⌘;` |
+| 顺时针旋转 45° | `Ctrl+'` | `⌘'` |
+| 分音提升一档 | `Ctrl+=` | `⌘=` |
+| 分音降低一档 | `Ctrl+-` | `⌘-` |

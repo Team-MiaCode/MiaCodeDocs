@@ -2,8 +2,8 @@
 
 Open `Export → Video export`, choose a difficulty, set the output path and parameters, and start export to generate a chart video.
 
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/导出-视频导出-导出-输出.png" alt="Video output path, parameters, and range">
+<figure class="doc-figure doc-figure--window">
+<img class="interface-shot" src="/images/video_export.png" alt="Video output path, parameters, and range">
 </figure>
 
 The export page provides these parameters:
@@ -29,6 +29,10 @@ Setting an export interval displays Range playback in the preview toolbar. Enabl
 
 ## Appearance and intro
 
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/export_video.png" alt="Export visual settings" loading="lazy">
+</figure>
+
 Visual, game, and skin sections provide brightness, scaling, note speeds, statistics, chart information, and count-in options. Their meanings are covered in [Preview settings](/en/miacode/settings/preview).
 
 Enabling an [Intro](/en/miacode/export/intro) displays song, difficulty, and designer information at the start of the video. The intro section controls style, background, fonts, and the PV segment.
@@ -41,5 +45,5 @@ Enabling an [Intro](/en/miacode/export/intro) displays song, difficulty, and des
 Open Batch export, add chart folders containing `maidata.txt` and media, select difficulties, and set an output folder. Starting export generates videos for the selected charts and difficulties.
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/导出-视频导出-批量导出.png" alt="Chart folders, difficulty selections, and batch output settings">
+<img class="interface-shot" src="/images/export_batch.png" alt="Chart folders, difficulty selections, and batch output settings">
 </figure>

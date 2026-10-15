@@ -1,4 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
+import { withBase } from 'vitepress'
 import { defineComponent, h } from 'vue'
 import { InjectionKey, NolebaseGitChangelogPlugin } from '@nolebase/vitepress-plugin-git-changelog/client'
 import { NolebaseHighlightTargetedHeading } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
@@ -12,6 +13,7 @@ import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
+    app.config.globalProperties.$withBase = withBase
     app.use(NolebaseGitChangelogPlugin)
     app.provide(InjectionKey, {
       hideChangelogNoChangesText: true,

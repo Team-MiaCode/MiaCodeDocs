@@ -46,7 +46,6 @@ features:
 ---
 
 <section class="home-showcase">
-  <h2>软件界面</h2>
-  <p>主区域显示文字编辑器与谱面预览，底部面板提供时间轴、语法检查和无理检测。左侧栏切换谱面、导出、设置和工具。</p>
-  <img src="/images/首页.png" alt="MiaCode 编辑器、预览与时间轴工作区">
+  <a class="showcase-dark" :href="$withBase('/images/main_dark.png')" target="_blank"><img src="/images/main_dark.png" alt="MiaCode 深色主题" width="2864" height="1864"></a>
+  <a class="showcase-light" :href="$withBase('/images/main_light.png')" target="_blank"><img src="/images/main_light.png" alt="MiaCode 浅色主题与分离预览" width="2864" height="1864"></a>
 </section>

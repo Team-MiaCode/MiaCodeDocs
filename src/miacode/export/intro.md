@@ -9,7 +9,7 @@
 谱面类型支持自动识别、DX 和 SD。等级可以选择文字渲染方式，标题与正文分别设置字体。
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/导出-视频导出-导出-片头.png" alt="片头设置">
+<img class="interface-shot" src="/images/export_intro.png" alt="片头设置">
 <figcaption>片头设置</figcaption>
 </figure>
 

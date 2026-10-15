@@ -55,27 +55,21 @@
     text-align: center;
 }
 
-.vp-doc .home-showcase h2 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 1.3;
-}
-
-.vp-doc .home-showcase p {
-    max-width: 640px;
-    margin: 12px auto 36px;
-    color: var(--vp-c-text-2);
-    line-height: 1.7;
-}
-
 .home-showcase img {
+    display: block;
     width: 100%;
-    border: 1px solid var(--vp-c-divider);
-    border-radius: 12px;
-    box-shadow: 0 24px 64px -24px rgba(190, 24, 93, 0.25);
+    height: auto;
+}
+
+.home-showcase .showcase-dark { display: none; }
+.dark .home-showcase .showcase-dark { display: block; }
+.dark .home-showcase .showcase-light { display: none; }
+
+.vp-doc .doc-figure--window .interface-shot {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
 }
 
 /* ---------- 下载页 ---------- */
@@ -249,11 +243,7 @@
         padding: 48px 24px 0;
     }
 
-    .vp-doc .home-showcase h2 {
-        font-size: 22px;
-    }
-
-    .mia-footer-inner {
+        .mia-footer-inner {
         gap: 24px;
     }
 }

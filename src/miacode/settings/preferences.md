@@ -4,6 +4,10 @@
 
 ## 编辑器
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/preferences_editor.png')" target="_blank"><img class="interface-shot" src="/images/preferences_editor.png" alt="编辑器" loading="lazy"></a>
+</figure>
+
 | 选项 | 用途 |
 | --- | --- |
 | 自动补全 | 开启 BPM、时值与节拍分音候选；操作见[文字编辑](/miacode/chart/text-editor#自动补全) |
@@ -26,17 +30,33 @@
 
 ## 快捷键
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/preferences_shortcuts.png')" target="_blank"><img class="interface-shot" src="/images/preferences_shortcuts.png" alt="快捷键" loading="lazy"></a>
+</figure>
+
 选择命令所在行，输入组合键；`Esc` 取消录入。行内重置恢复该命令的默认值，`恢复全部默认` 恢复整组快捷键。播放速度与时间轴缩放也可在这里调整，菜单中的快捷键随设置变化。
 
 ## 界面与布局
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/preferences_interface.png')" target="_blank"><img class="interface-shot" src="/images/preferences_interface.png" alt="界面" loading="lazy"></a>
+</figure>
 
 选择语言、浅色或深色主题及配色。侧栏支持标准与高效模式；布局选择 `编辑器｜预览` 或 `预览｜编辑器`，控制两个面板的左右位置。模糊材质控制界面材质效果。
 
 ## 性能
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/preferences_performance.png')" target="_blank"><img class="interface-shot" src="/images/preferences_performance.png" alt="性能" loading="lazy"></a>
+</figure>
+
 视频解码可选择硬件或软件方式，画布、PV 与时间轴分别设置刷新率。视频输出帧率见[视频导出](/miacode/export/video#输出参数)。
 
 ## 背景
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/preferences_background.png')" target="_blank"><img class="interface-shot" src="/images/preferences_background.png" alt="背景" loading="lazy"></a>
+</figure>
 
 开启 MiaCode 背景后选择图片，调整图片透明度、遮罩与模糊。覆盖、完整显示、拉伸、居中和平铺控制图片布局，位置选项控制对齐。
 
@@ -47,3 +67,5 @@
 选择正式版或预发布版通道，设置启动时检查更新，或使用 `立即检查` 查看所选通道的结果。
 
 <span id="界面"></span>
+
+[界面模式与面板布局](/miacode/ui-modes)

@@ -2,6 +2,11 @@
 
 Open this page from the Chart sidebar or Tools menu to set BPM and chart offset and play timing sounds.
 
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/latency.png')" target="_blank"><img class="interface-shot" src="/images/latency.png" alt="Latency calibration" loading="lazy"></a>
+</figure>
+
 ## BPM and offset
 
 Enter a known BPM, or choose Auto detect beside BPM. The tool analyzes the current song and displays the detected value; adopted values are applied to the chart.

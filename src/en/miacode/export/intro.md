@@ -9,7 +9,7 @@ Choose Classic or PV preview style. Use the jacket or a custom image as the back
 Chart type supports automatic selection, DX, and SD. Level rendering and separate title and body fonts control the card's text.
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/导出-视频导出-导出-片头.png" alt="Intro settings">
+<img class="interface-shot" src="/images/export_intro.png" alt="Intro settings">
 <figcaption>Intro settings</figcaption>
 </figure>
 

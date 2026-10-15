@@ -1,10 +1,20 @@
 # Chart download and upload
 
+
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/net_download.png')" target="_blank"><img class="interface-shot" src="/images/net_download.png" alt="Net chart download" loading="lazy"></a>
+</figure>
+
 ## Download
 
-Open `Tools → Chart download`. Enter a user ID, tag, or song title, choose a date range and sort order, and search. Click a result to open its preview and select charts.
+Open `Tools → Chart download`. Enter a user ID, tag, or song title, choose a date range and sort order, and search. Select charts using the row checkboxes, and click Online Preview to inspect a chart.
 
-Choose an output folder and whether to download PV, then start the download. The list shows progress and logs; resume a paused task with Continue download.
+Choose an output folder and whether to download PV, then start the download. Select Create ZIP after success to save an archive alongside the chart folder. Use Select All for the query results and View Log for task details. The list shows progress and logs; resume a paused task with Continue download.
+
+
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/net_upload.png')" target="_blank"><img class="interface-shot" src="/images/net_upload.png" alt="Net chart upload" loading="lazy"></a>
+</figure>
 
 ## Upload
 

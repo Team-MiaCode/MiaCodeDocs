@@ -7,7 +7,7 @@ The Syntax and Muri tabs in the bottom panel display results for the current dif
 Syntax checks parse simai text and report syntax errors and compatibility warnings. Recheck updates the results.
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/语法模块.png" alt="Syntax check results">
+<img class="interface-shot" src="/images/syntax.png" alt="Syntax check results">
 <figcaption>Syntax check results</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ Compatibility warnings cover subdivisions above 384 or that do not divide 384, `
 Muri simulates hand actions and note judgments. The list displays the type, location, related notes, and time gap.
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/无理模块.png" alt="Pattern warning results">
+<img class="interface-shot" src="/images/muri.png" alt="Pattern warning results">
 <figcaption>Pattern warning results</figcaption>
 </figure>
 

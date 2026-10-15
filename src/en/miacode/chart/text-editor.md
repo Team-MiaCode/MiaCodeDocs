@@ -2,7 +2,15 @@
 
 Select or add a difficulty to write simai text. Preview and analysis update as you edit.
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/text_editor.png')" target="_blank"><img class="interface-shot" src="/images/text_editor.png" alt="Text editor" loading="lazy"></a>
+</figure>
+
 ## Completion
+
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/completion.png" alt="Completion candidates" loading="lazy">
+</figure>
 
 Enable completion in [Preferences → Editor](/en/miacode/settings/preferences#completion). Typing `[`, `{`, or `(` opens the corresponding candidates. Typed text filters the list.
 
@@ -60,4 +68,20 @@ Click a bookmark to jump to its line. Add, rename, and delete commands in the li
 
 ## Find and replace
 
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/find_replace.png" alt="Find and replace" loading="lazy">
+</figure>
+
 Open `Edit → Find` or press `Ctrl+F` (`⌘F` on macOS) to find or replace the current match or all matches. Match case and whole-word options refine the query. `Enter` finds the next match, `Shift+Enter` finds the previous match, and `Esc` closes the panel.
+
+## Transform shortcuts
+
+| Action | Default | macOS |
+| --- | --- | --- |
+| Mirror left and right | `Ctrl+J` | `⌘J` |
+| Mirror up and down | `Ctrl+K` | `⌘K` |
+| Rotate 180° | `Ctrl+L` | `⌘L` |
+| Rotate counterclockwise 45° | `Ctrl+;` | `⌘;` |
+| Rotate clockwise 45° | `Ctrl+'` | `⌘'` |
+| Double subdivision | `Ctrl+=` | `⌘=` |
+| Halve subdivision | `Ctrl+-` | `⌘-` |

@@ -8,6 +8,11 @@ Media processing and video export use FFmpeg. FFmpeg search locations include th
 
 Configure the executable according to the path message if a tool reports that FFmpeg is needed.
 
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/prepend_audio.png')" target="_blank"><img class="interface-shot" src="/images/prepend_audio.png" alt="Prepend silence" loading="lazy"></a>
+</figure>
+
 ## Prepend blank
 
 Audio prepend inserts silence at the start of `track.mp3`. Video prepend inserts black frames at the start of PV.
@@ -25,6 +30,10 @@ The alignment command compares the PV audio with `track.mp3`, estimates their ti
 Alignment uses the PV audio track for analysis. Video compression removes the audio track.
 
 ## Compression
+
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/media_tools.png" alt="Batch video compression" loading="lazy">
+</figure>
 
 Current-video compression targets a size below 20 MB and removes audio. It saves or replaces a sibling `_bak` backup.
 

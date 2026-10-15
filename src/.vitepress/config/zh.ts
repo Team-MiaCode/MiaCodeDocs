@@ -16,13 +16,14 @@ export const zh = defineConfig({
       }
     },
     nav: [
-      { text: '文档', link: '/miacode/', activeMatch: '^/miacode/' },
+      { text: '快速开始', link: '/miacode/quick-start', activeMatch: '^/miacode/' },
       { text: '下载', link: '/download' },
       { text: 'GitHub', link: 'https://github.com/Team-MiaCode/MiaCode' }
     ],
     sidebar: [
-      { text: 'MiaCode', base: '/miacode', link: '/', collapsed: false, items: [
+      { text: 'MiaCode', base: '/miacode', link: '/quick-start', collapsed: false, items: [
         { text: '快速开始', link: '/quick-start' },
+        { text: '界面模式', link: '/ui-modes' },
         { text: '谱面', collapsed: false, items: [
           { text: '文字编辑', link: '/chart/text-editor' },
           { text: '谱面预览', link: '/chart/preview' },

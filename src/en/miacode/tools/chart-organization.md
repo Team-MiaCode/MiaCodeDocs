@@ -2,6 +2,11 @@
 
 Chart organization formats subdivisions, line breaks, and spacing. Open it from `Tools → Chart organization`, `Transform → Chart organization`, or the editor context menu.
 
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/normalize.png')" target="_blank"><img class="interface-shot" src="/images/normalize.png" alt="Chart organization" loading="lazy"></a>
+</figure>
+
 ## Processing range
 
 The default processing range is the current difficulty's entire text. Selecting text changes the range to that selection. The dialog displays either the whole chart or the selection's start and end lines. Choose the format and apply organization to write the result back to the editor.

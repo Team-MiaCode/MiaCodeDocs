@@ -17,7 +17,7 @@
 修改带试听音的通道后，窗口会播放对应音效。`静音 Break 星星尾判音` 控制 Break Slide 尾部判定声音。
 
 <figure class="doc-figure doc-figure--portrait">
-<img class="interface-shot" src="/images/音频设置页面.png" alt="预览音频通道与音量设置">
+<img class="interface-shot" src="/images/audio.png" alt="预览音频通道与音量设置">
 <figcaption>音频设置</figcaption>
 </figure>
 

@@ -2,6 +2,10 @@
 
 本页介绍 2.0.0-alpha 中创建、打开、编辑和保存谱面的操作。
 
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/main_dark.png')" target="_blank"><img class="interface-shot" src="/images/main_dark.png" alt="MiaCode 工作区" loading="lazy"></a>
+</figure>
+
 ## 下载与启动
 
 各平台安装包见[下载 MiaCode](/download)，解压后启动。

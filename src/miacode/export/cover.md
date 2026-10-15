@@ -2,6 +2,11 @@
 
 使用 `导出 → 封面导出` 制作投稿封面。封面编辑器提供画布、图层与谱面帧选项，可组合歌曲信息、图片、文字和配置画面。
 
+
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/cover_editor.png')" target="_blank"><img class="interface-shot" src="/images/cover_editor.png" alt="封面编辑器" loading="lazy"></a>
+</figure>
+
 ## 画布与背景
 
 选择输出大小，支持 1:1、4:3 和 16:9 比例的预设。背景可使用曲绘、自定义图片或透明背景，并调整亮度与模糊效果。

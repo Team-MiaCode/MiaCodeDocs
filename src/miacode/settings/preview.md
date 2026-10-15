@@ -14,11 +14,15 @@ Tap 与 Touch 流速分别设置，控制物件接近判定位置的速度。
 | 判定效果、判定文字距离 | 调整判定反馈的表现与位置 |
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/预览设置-游戏.png" alt="Tap、Touch 流速与游戏显示设置">
+<img class="interface-shot" src="/images/preview_gameplay.png" alt="Tap、Touch 流速与游戏显示设置">
 <figcaption>游戏设置</figcaption>
 </figure>
 
 ## 视频
+
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/preview_video.png" alt="预览画面设置" loading="lazy">
+</figure>
 
 内侧亮度控制判定圈内的背景或 PV，外侧亮度控制圈外区域。谱面显示范围控制舞台占画面的比例。
 
@@ -45,7 +49,7 @@ Tap 与 Touch 流速分别设置，控制物件接近判定位置的速度。
 选择物件皮肤、谱面效果和判定线样式，通过 `打开目录` 管理素材。HUD 字体按中心显示、时间戳和物量统计等区域设置，可选用已有字体、导入文件或恢复设置。
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/预览设置-皮肤.png" alt="物件皮肤、判定线样式与分区域 HUD 字体设置">
+<img class="interface-shot" src="/images/preview_skin.png" alt="物件皮肤、判定线样式与分区域 HUD 字体设置">
 <figcaption>皮肤与 HUD 字体设置</figcaption>
 </figure>
 

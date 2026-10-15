@@ -8,6 +8,11 @@
 
 出现 FFmpeg 路径提示时，按提示配置可执行文件后使用相关工具。
 
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/prepend_audio.png')" target="_blank"><img class="interface-shot" src="/images/prepend_audio.png" alt="音频前置空白" loading="lazy"></a>
+</figure>
+
 ## 前置空白
 
 `音频处理 track.mp3 → 前置空白` 在音频开头添加静音；`视频处理 pv.mp4 → 添加片头黑幕` 在视频开头添加黑幕。
@@ -25,6 +30,10 @@
 该功能使用 PV 中的音轨进行分析。视频压缩会移除音轨。
 
 ## 视频压缩
+
+<figure class="doc-figure">
+<img class="interface-shot" src="/images/media_tools.png" alt="批量视频压缩" loading="lazy">
+</figure>
 
 `压缩当前视频` 将当前背景视频压缩到 20 MB 以下，并移除音轨。处理时会保存或覆盖同目录的 `_bak` 视频备份。
 

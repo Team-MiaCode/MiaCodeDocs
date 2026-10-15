@@ -9,7 +9,7 @@ Click the time ruler above the notes to seek the preview and navigate the editor
 Drag the waveform area or scroll the wheel to browse horizontally.
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/时间轴模块.png" alt="Timeline waveform, notes, time ruler, and zoom controls">
+<img class="interface-shot" src="/images/timeline.png" alt="Timeline waveform, notes, time ruler, and zoom controls">
 <figcaption>Timeline</figcaption>
 </figure>
 

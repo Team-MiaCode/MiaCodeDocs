@@ -4,6 +4,10 @@ Open Preferences from the main toolbar's settings entry. Changes apply and are s
 
 ## Editor
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/preferences_editor.png')" target="_blank"><img class="interface-shot" src="/images/preferences_editor.png" alt="Editor" loading="lazy"></a>
+</figure>
+
 | Option | Purpose |
 | --- | --- |
 | Completion | Enables BPM, duration, and subdivision candidates; see [Text editor](/en/miacode/chart/text-editor#completion) |
@@ -26,17 +30,33 @@ The ruler sits beside the editor's vertical scrollbar: yellow marks warnings, bl
 
 ## Shortcuts
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/preferences_shortcuts.png')" target="_blank"><img class="interface-shot" src="/images/preferences_shortcuts.png" alt="Shortcuts" loading="lazy"></a>
+</figure>
+
 Select a command row and enter a combination; `Esc` cancels entry. The row's reset restores that command, while Restore all defaults resets the group. Playback speed and timeline zoom commands are also available here. Menu shortcuts reflect your settings.
 
 ## Interface and layout
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/preferences_interface.png')" target="_blank"><img class="interface-shot" src="/images/preferences_interface.png" alt="Interface" loading="lazy"></a>
+</figure>
 
 Choose a language, light or dark theme, and palette. The sidebar supports standard and efficient modes. Choose Editor | Preview or Preview | Editor to arrange the panels. Blur materials controls interface effects.
 
 ## Performance
 
+<figure class="doc-figure">
+<a :href="$withBase('/images/preferences_performance.png')" target="_blank"><img class="interface-shot" src="/images/preferences_performance.png" alt="Performance" loading="lazy"></a>
+</figure>
+
 Choose hardware or software video decoding. Canvas, PV, and timeline have separate frame-rate controls. Set output frame rate in [Video export](/en/miacode/export/video#output-parameters).
 
 ## Background
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/preferences_background.png')" target="_blank"><img class="interface-shot" src="/images/preferences_background.png" alt="Background" loading="lazy"></a>
+</figure>
 
 Enable the application background, choose an image, and adjust opacity, mask, and blur. Cover, contain, stretch, center, and repeat control layout; position controls alignment.
 
@@ -47,3 +67,5 @@ This background belongs to the application interface. Configure chart background
 Choose a stable or prerelease channel, enable startup checks, or use Check now to view results for the selected channel.
 
 <span id="interface"></span>
+
+[Interface modes and panel layout](/en/miacode/ui-modes)

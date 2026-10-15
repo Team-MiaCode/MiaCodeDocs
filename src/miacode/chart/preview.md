@@ -11,7 +11,7 @@
 预览工具栏提供播放、暂停和停止。拖动进度条，或点击时间轴上方的时间刻度，预览会跳转到对应时间。
 
 <figure class="doc-figure doc-figure--portrait">
-<img class="interface-shot" src="/images/预览区.png" alt="谱面预览及底部播放工具栏">
+<img class="interface-shot" src="/images/preview.png" alt="谱面预览及底部播放工具栏">
 <figcaption>谱面预览与播放工具栏</figcaption>
 </figure>
 
@@ -23,7 +23,26 @@
 
 ## 分离与停靠
 
-拖动面板边界调整编辑器、预览和底部面板的占比。通过预览工具栏的分离与停靠按钮，将预览移到独立窗口或放回主窗口；左右排列在[首选项](/miacode/settings/preferences#界面与布局)中设置。
+点击预览底部工具栏右侧的 `分离预览窗口` 按钮，预览画面、播放控件与物量统计会移入独立窗口。拖动窗口可放到另一块显示器，调整窗口大小可扩大配置画面。
+
+编辑器中的修改和时间定位会同步到独立预览。点击独立窗口右下角的停靠按钮，或关闭该窗口，预览会回到编辑窗口。
+
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/main_light.png')" target="_blank"><img class="interface-shot" src="/images/main_light.png" alt="高效侧栏与独立预览窗口" loading="lazy"></a>
+</figure>
+
+拖动面板边界调整编辑器、预览和底部面板的占比。左右排列与侧栏模式见[界面模式](/miacode/ui-modes)。
+
+## 播放快捷键
+
+| 操作 | 默认快捷键 | macOS |
+| --- | --- | --- |
+| 播放或暂停 | `Ctrl+Shift+X` | `⌘⇧X` |
+| 停止或播放 | `Ctrl+Shift+C` | `⌘⇧C` |
+| 降低播放速度 | `Ctrl+O` | `⌘O` |
+| 提高播放速度 | `Ctrl+P` | `⌘P` |
+
+快捷键可在[首选项](/miacode/settings/preferences#快捷键)修改。
 
 <span id="实时更新与预览"></span>
 <span id="面板与画面"></span>

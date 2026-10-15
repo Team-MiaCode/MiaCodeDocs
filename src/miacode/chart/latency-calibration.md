@@ -2,6 +2,11 @@
 
 使用 `谱面 → 延迟校准` 或 `工具 → 延迟校准` 打开页面，设置歌曲 BPM 与谱面偏移，并播放计拍声音。
 
+
+<figure class="doc-figure">
+<a :href="$withBase('/images/latency.png')" target="_blank"><img class="interface-shot" src="/images/latency.png" alt="延迟校准" loading="lazy"></a>
+</figure>
+
 ## BPM 与偏移
 
 填写 BPM 数值，或点击 BPM 旁的 `自动检测`。MiaCode 会分析当前歌曲并显示检测结果，采用的数值会写入谱面。

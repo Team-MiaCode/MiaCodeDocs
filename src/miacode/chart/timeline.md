@@ -9,7 +9,7 @@
 拖动波形区域或滚动滚轮可横向浏览。
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/时间轴模块.png" alt="包含波形、物件、时间刻度与缩放入口的时间轴">
+<img class="interface-shot" src="/images/timeline.png" alt="包含波形、物件、时间刻度与缩放入口的时间轴">
 <figcaption>时间轴</figcaption>
 </figure>
 

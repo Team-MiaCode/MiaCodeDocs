@@ -16,13 +16,14 @@ export const en = defineConfig({
       }
     },
     nav: [
-      { text: 'Docs', link: '/en/miacode/', activeMatch: '^/en/miacode/' },
+      { text: 'Quick Start', link: '/en/miacode/quick-start', activeMatch: '^/en/miacode/' },
       { text: 'Download', link: '/en/download' },
       { text: 'GitHub', link: 'https://github.com/Team-MiaCode/MiaCode' }
     ],
     sidebar: [
-      { text: 'MiaCode', base: '/en/miacode', link: '/', collapsed: false, items: [
+      { text: 'MiaCode', base: '/en/miacode', link: '/quick-start', collapsed: false, items: [
         { text: 'Quick Start', link: '/quick-start' },
+        { text: 'Interface modes', link: '/ui-modes' },
         { text: 'Chart', collapsed: false, items: [
           { text: 'Text editor', link: '/chart/text-editor' },
           { text: 'Chart preview', link: '/chart/preview' },

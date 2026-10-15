@@ -9,7 +9,7 @@ Enter the title, artist, and designer. The read-from-audio command reads song in
 Offset corresponds to simai `&first` and is measured in seconds. Count-in controls the beat count before playback. BPM and offset detection are described in [Latency calibration](/en/miacode/chart/latency-calibration).
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/谱面信息页.png" alt="Chart information">
+<img class="interface-shot" src="/images/information.png" alt="Chart information">
 <figcaption>Chart information</figcaption>
 </figure>
 

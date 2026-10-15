@@ -9,7 +9,7 @@
 偏移对应 simai 的 `&first`，单位为秒；计数拍用于播放开始前的计拍。BPM 与偏移的检测、试听操作见 [延迟校准](/miacode/chart/latency-calibration)。
 
 <figure class="doc-figure">
-<img class="interface-shot" src="/images/谱面信息页.png" alt="谱面信息">
+<img class="interface-shot" src="/images/information.png" alt="谱面信息">
 <figcaption>谱面信息</figcaption>
 </figure>
 

@@ -2,6 +2,10 @@
 
 This page covers creating, opening, editing, and saving charts in 2.0.0-alpha.
 
+<figure class="doc-figure doc-figure--window">
+<a :href="$withBase('/images/main_dark.png')" target="_blank"><img class="interface-shot" src="/images/main_dark.png" alt="MiaCode workspace" loading="lazy"></a>
+</figure>
+
 ## Download and launch
 
 Get a package from [Download MiaCode](/en/download), extract it, and launch the application.
