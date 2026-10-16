@@ -53,3 +53,10 @@ pageClass: download-page
     <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0-alpha/MiaCode_2.0.0-alpha_mac_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
   </section>
 </div>
+
+<details class="download-archive">
+  <summary>往期版本下载</summary>
+  <div class="download-archive-body">
+    <span class="download-version">1.2.0</span>
+  </div>
+</details>
