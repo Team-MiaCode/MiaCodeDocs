@@ -18,22 +18,6 @@
     text-wrap: balance;
 }
 
-.VPHomeHero .image-src {
-    animation: hero-float 4s ease-in-out infinite;
-}
-
-/* VitePress 用 translate(-50%, -50%) 居中图片，动画需保留该偏移 */
-@keyframes hero-float {
-    0%,
-    100% {
-        transform: translate(-50%, -50%);
-    }
-
-    50% {
-        transform: translate(-50%, calc(-50% - 8px));
-    }
-}
-
 .VPFeature {
     border-color: var(--vp-c-divider);
     transition: border-color 0.25s, transform 0.25s;
@@ -317,11 +301,5 @@
 
         .mia-footer-inner {
         gap: 24px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .VPHomeHero .image-src {
-        animation: none;
     }
 }
