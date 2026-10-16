@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 # Create a chart
 
 The creation flow is documented in [Quick Start](/en/miacode/quick-start).

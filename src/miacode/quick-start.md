@@ -2,8 +2,8 @@
 
 本页介绍 2.0.0-alpha 中创建、打开、编辑和保存谱面的操作。
 
-<figure class="doc-figure doc-figure--window">
-<a :href="$withBase('/images/main_dark.png')" target="_blank"><img class="interface-shot" src="/images/main_dark.png" alt="MiaCode 工作区" loading="lazy"></a>
+<figure class="doc-figure doc-figure--overview doc-figure--window">
+<a :href="$withBase('/images/main_dark.png')" target="_blank"><img class="interface-shot" src="/images/main_dark.png" alt="MiaCode 工作区" width="2864" height="1864" loading="lazy"></a>
 </figure>
 
 ## 下载与启动
@@ -21,19 +21,21 @@ Linux 构建步骤见仓库 [README](https://github.com/Team-MiaCode/MiaCode/blo
 
 ## 创建或打开谱面
 
-<figure class="doc-figure doc-figure--window">
-<a :href="$withBase('/images/welcome.png')" target="_blank"><img class="interface-shot" src="/images/welcome.png" alt="欢迎页" loading="lazy"></a>
-</figure>
-
-<figure class="doc-figure doc-figure--window">
-<a :href="$withBase('/images/new_audio.png')" target="_blank"><img class="interface-shot" src="/images/new_audio.png" alt="新建谱面选择音频" loading="lazy"></a>
-</figure>
-
-在欢迎页选择新建，或使用 `文件 → 新建`，选择音频文件。支持 `.mp3`、`.wav`、`.flac` 和 `.ogg`。MiaCode 在歌曲所在目录创建 `maidata.txt`，并准备预览使用的 `track` 音频。
+在欢迎页选择新建，或使用 `文件 → 新建`（`Ctrl/⌘+Shift+N`）打开新建窗口，选择音频文件。支持 `.mp3`、`.wav`、`.flac` 和 `.ogg`。MiaCode 在歌曲所在目录创建 `maidata.txt`，并准备预览使用的 `track` 音频。
 
 拖入音频可创建谱面。目录已有谱面或歌曲时，对话框会提供打开、覆盖或创建文件夹的选项。
 
-已有谱面通过 `文件 → 打开`、最近打开列表，或拖入 `maidata.txt` 打开。
+已有谱面通过 `文件 → 打开`（`Ctrl/⌘+Shift+O`）、最近打开列表，或拖入 `maidata.txt` 打开。
+
+<div class="doc-figure-grid">
+<figure class="doc-figure doc-figure--panel">
+<a :href="$withBase('/images/welcome.png')" target="_blank"><img class="interface-shot" src="/images/welcome.png" alt="欢迎页" width="1160" height="1625" loading="lazy"></a>
+</figure>
+
+<figure class="doc-figure doc-figure--overview">
+<a :href="$withBase('/images/new_audio.png')" target="_blank"><img class="interface-shot" src="/images/new_audio.png" alt="新建谱面选择音频" width="2020" height="1140" loading="lazy"></a>
+</figure>
+</div>
 
 <span id="新建谱面"></span>
 <span id="从歌曲创建"></span>
@@ -42,27 +44,15 @@ Linux 构建步骤见仓库 [README](https://github.com/Team-MiaCode/MiaCode/blo
 
 ## 选择难度与填写信息
 
-<figure class="doc-figure">
-<a :href="$withBase('/images/information.png')" target="_blank"><img class="interface-shot" src="/images/information.png" alt="谱面信息" loading="lazy"></a>
-</figure>
-
 添加或选择要编写的难度，在[谱面信息](/miacode/chart/information)填写等级、标题、曲师、谱师和素材。
 
 ## 校准节拍
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/latency.png')" target="_blank"><img class="interface-shot" src="/images/latency.png" alt="BPM 与偏移校准" loading="lazy"></a>
-</figure>
 
 打开[延迟校准](/miacode/chart/latency-calibration)，填写 BPM 与偏移，或点击对应的 `自动检测`。`开始试听` 会播放歌曲与计拍声音。
 
 <span id="填写信息与校准"></span>
 
 ## 编辑与预览
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/text_editor.png')" target="_blank"><img class="interface-shot" src="/images/text_editor.png" alt="谱面文本编辑" loading="lazy"></a>
-</figure>
 
 在[文字编辑](/miacode/chart/text-editor)中输入 simai 文本。以下文本表示 120 BPM、四分音的四个 Tap：
 
@@ -77,8 +67,4 @@ E
 
 ## 保存
 
-<figure class="doc-figure">
-<a :href="$withBase('/images/save_toolbar.png')" target="_blank"><img class="interface-shot" src="/images/save_toolbar.png" alt="保存与保存整个文档" loading="lazy"></a>
-</figure>
-
-`文件 → 保存` 保存当前编辑部分；`保存整个文档` 保存各难度与文档中的修改。
+使用 `文件 → 保存`（`Ctrl/⌘+S`）保存当前编辑部分；使用 `保存整个文档` 保存各难度与文档中的修改。`另存为`（`Ctrl/⌘+Shift+S`）将内容保存到所选位置。按 `Ctrl/⌘+W` 关闭当前编辑页。

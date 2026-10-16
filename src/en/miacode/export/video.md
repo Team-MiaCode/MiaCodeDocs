@@ -1,12 +1,14 @@
 # Video export
 
-Open `Export → Video export`, choose a difficulty, set the output path and parameters, and start export to generate a chart video.
+Click the export icon on the left to open the export page.
 
-<figure class="doc-figure doc-figure--window">
-<img class="interface-shot" src="/images/video_export.png" alt="Video output path, parameters, and range">
+## Output settings {#output-parameters}
+
+<figure class="doc-figure doc-figure--overview doc-figure--window">
+<a :href="$withBase('/images/video_export.png')" target="_blank"><img class="interface-shot" src="/images/video_export.png" alt="Video export difficulty, file name, and output parameters" width="2784" height="1824" loading="lazy"></a>
 </figure>
 
-The export page provides these parameters:
+On the Output tab, choose a difficulty, set the file name and output path, and adjust the video parameters.
 
 | Parameter | Function |
 | --- | --- |
@@ -15,11 +17,9 @@ The export page provides these parameters:
 | Audio bitrate | Sets the audio encoding bitrate |
 | Quality and file-size preset | Sets video encoding quality and file-size preset |
 
-## Range export
+Click Start export to generate the chart video when the settings are ready.
 
-<figure class="doc-figure doc-figure--window">
-<a :href="$withBase('/images/export_range.png')" target="_blank"><img class="interface-shot" src="/images/export_range.png" alt="Export range and range playback" loading="lazy"></a>
-</figure>
+## Range export
 
 Enter start and end times or drag the range handles to set the export interval. The normal minimum is 5 seconds; songs shorter than 5 seconds use their available duration.
 
@@ -29,13 +29,14 @@ Select text in the editor and choose Export selected range from its context menu
 
 Setting an export interval displays Range playback in the preview toolbar. Enable it to play within the interval. The same button returns to full-song playback.
 
+<figure class="doc-figure doc-figure--overview doc-figure--window">
+<a :href="$withBase('/images/export_range.png')" target="_blank"><img class="interface-shot" src="/images/export_range.png" alt="Export range and range playback" width="2784" height="1824" loading="lazy"></a>
+<figcaption>After enabling range playback mode</figcaption>
+</figure>
+
 <span id="output-and-appearance"></span>
 
 ## Appearance and intro
-
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/export_video.png" alt="Export visual settings" loading="lazy">
-</figure>
 
 Visual, game, and skin sections provide brightness, scaling, note speeds, statistics, chart information, and count-in options. Their meanings are covered in [Preview settings](/en/miacode/settings/preview).
 
@@ -47,7 +48,3 @@ Enabling an [Intro](/en/miacode/export/intro) displays song, difficulty, and des
 ## Batch export
 
 Open Batch export, add chart folders containing `maidata.txt` and media, select difficulties, and set an output folder. Starting export generates videos for the selected charts and difficulties.
-
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/export_batch.png" alt="Chart folders, difficulty selections, and batch output settings">
-</figure>

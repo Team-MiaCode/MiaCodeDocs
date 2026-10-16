@@ -57,21 +57,8 @@
     gap: 24px;
 }
 
-.home-showcase img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 @media (max-width: 960px) {
     .home-showcase { grid-template-columns: minmax(0, 1fr); }
-}
-
-.vp-doc .doc-figure--window .interface-shot {
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    background: transparent;
 }
 
 /* ---------- 下载页 ---------- */

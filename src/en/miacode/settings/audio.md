@@ -16,8 +16,8 @@ Open `Preview → Audio settings` to adjust preview and intro sounds. Drag a sli
 
 Changing a channel with a preview sound plays that sound. Mute Break Star Tail Judgment Sound controls the judgment sound at the end of a Break Slide.
 
-<figure class="doc-figure doc-figure--portrait">
-<img class="interface-shot" src="/images/audio.png" alt="Preview audio channels and volume controls">
+<figure class="doc-figure doc-figure--panel">
+<a :href="$withBase('/images/audio.png')" target="_blank"><img class="interface-shot" src="/images/audio.png" alt="Preview audio channels and volume controls" width="1440" height="1400" loading="lazy"></a>
 <figcaption>Adjust or mute each sound type independently.</figcaption>
 </figure>
 

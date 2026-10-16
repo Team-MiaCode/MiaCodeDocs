@@ -12,10 +12,10 @@ MiaCode 会在编辑期间保存备份，用于找回历史文本或恢复异常
 
 ## 异常退出
 
-<figure class="doc-figure">
-<a :href="$withBase('/images/backup_restore.png')" target="_blank"><img class="interface-shot" src="/images/backup_restore.png" alt="从备份恢复提示" loading="lazy"></a>
-</figure>
-
 打开上次异常退出时的谱面，MiaCode 检测到可恢复快照后会显示恢复提示。选择恢复会将快照加载到当前文档，保存后写入谱面文件。
+
+<figure class="doc-figure doc-figure--compact">
+<a :href="$withBase('/images/backup_restore.png')" target="_blank"><img class="interface-shot" src="/images/backup_restore.png" alt="从备份恢复提示" width="920" height="284" loading="lazy"></a>
+</figure>
 
 `.miacode` 目录保存本地备份与 MiaCode 设置，媒体工具生成的 `_bak` 文件用于还原素材。

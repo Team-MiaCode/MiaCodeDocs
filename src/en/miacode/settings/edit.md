@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 # Edit area
 
 Editor instructions are documented in [Text editor](/en/miacode/chart/text-editor).

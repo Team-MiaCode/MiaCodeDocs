@@ -2,8 +2,8 @@
 
 The Tools menu provides separate audio and video processing menus. The tools use the song and PV in the opened, saved chart's folder.
 
-<figure class="doc-figure">
-<a :href="$withBase('/images/media_tools.png')" target="_blank"><img class="interface-shot" src="/images/media_tools.png" alt="Audio and video processing menus" loading="lazy"></a>
+<figure class="doc-figure doc-figure--overview">
+<a :href="$withBase('/images/media_tools.png')" target="_blank"><img class="interface-shot" src="/images/media_tools.png" alt="Audio and video processing menus" width="1520" height="480" loading="lazy"></a>
 </figure>
 
 ## FFmpeg
@@ -13,10 +13,6 @@ Media processing and video export use FFmpeg. FFmpeg search locations include th
 Configure the executable according to the path message if a tool reports that FFmpeg is needed.
 
 ## Prepend blank
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/prepend_audio.png')" target="_blank"><img class="interface-shot" src="/images/prepend_audio.png" alt="Prepend silence" loading="lazy"></a>
-</figure>
 
 Audio prepend inserts silence at the start of `track.mp3`. Video prepend inserts black frames at the start of PV.
 
@@ -33,10 +29,6 @@ The alignment command compares the PV audio with `track.mp3`, estimates their ti
 Alignment uses the PV audio track for analysis. Video compression removes the audio track.
 
 ## Compression
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/video_compression.png')" target="_blank"><img class="interface-shot" src="/images/video_compression.png" alt="Batch video compression" loading="lazy"></a>
-</figure>
 
 Current-video compression targets a size below 20 MB and removes audio. It saves or replaces a sibling `_bak` backup.
 

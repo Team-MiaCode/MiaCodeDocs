@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 # Audio and sync
 
 Song fields, BPM, and offset are documented in:

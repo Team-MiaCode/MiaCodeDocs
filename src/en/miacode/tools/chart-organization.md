@@ -2,16 +2,15 @@
 
 Chart organization formats subdivisions, line breaks, and spacing. Open it from `Tools → Chart organization`, `Transform → Chart organization`, or the editor context menu.
 
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/normalize.png')" target="_blank"><img class="interface-shot" src="/images/normalize.png" alt="Chart organization" loading="lazy"></a>
-</figure>
-
 ## Processing range
 
 The default processing range is the current difficulty's entire text. Selecting text changes the range to that selection. The dialog displays either the whole chart or the selection's start and end lines. Choose the format and apply organization to write the result back to the editor.
 
 Organization reads the BPM and subdivision preceding the selection and formats the selected passage from a new measure boundary. Parsing errors appear in the dialog; their locations and meanings are covered in [Syntax checks](/en/miacode/chart/validation#syntax).
+
+<figure class="doc-figure doc-figure--compact">
+<a :href="$withBase('/images/normalize.png')" target="_blank"><img class="interface-shot" src="/images/normalize.png" alt="Chart organization" width="840" height="536" loading="lazy"></a>
+</figure>
 
 ## Before and after
 

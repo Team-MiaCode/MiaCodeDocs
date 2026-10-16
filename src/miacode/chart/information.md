@@ -2,22 +2,18 @@
 
 从左侧 `谱面 → 谱面信息`，或 `工具 → 谱面信息` 打开信息页。这里管理歌曲字段、谱师名义和谱面素材。
 
+<figure class="doc-figure doc-figure--panel">
+<a :href="$withBase('/images/information.png')" target="_blank"><img class="interface-shot" src="/images/information.png" alt="谱面信息" width="1456" height="1168" loading="lazy"></a>
+<figcaption>谱面信息</figcaption>
+</figure>
+
 ## 歌曲字段
 
 填写标题、曲师和谱师。`从音频文件读取` 会读取媒体文件中的歌曲信息并填入对应字段。
 
 偏移对应 simai 的 `&first`，单位为秒；计数拍用于播放开始前的计拍。BPM 与偏移的检测、试听操作见 [延迟校准](/miacode/chart/latency-calibration)。
 
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/information.png" alt="谱面信息">
-<figcaption>谱面信息</figcaption>
-</figure>
-
 ## 难度与谱师
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/designer_names.png')" target="_blank"><img class="interface-shot" src="/images/designer_names.png" alt="谱师名义管理" loading="lazy"></a>
-</figure>
 
 选择难度后，可以填写该难度的等级与谱师。通过 `谱师名义管理` 分别设置各难度的署名，或选择让各难度使用同一个谱师名义。
 

@@ -2,16 +2,15 @@
 
 谱面整理调整分音表示、换行和段落间距。使用 `工具 → 谱面整理`、`调整 → 谱面整理` 或编辑器右键菜单打开整理窗口。
 
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/normalize.png')" target="_blank"><img class="interface-shot" src="/images/normalize.png" alt="谱面整理" loading="lazy"></a>
-</figure>
-
 ## 处理范围
 
 处理范围默认为当前难度的全部文本；选择片段后，整理范围为所选文本。窗口会显示整份谱面或选区的起止行。设置格式后点击 `整理`，结果写回编辑器。
 
 整理会读取选区前的 BPM 和分音，并按新小节起点排版所选片段。解析错误会显示在窗口中，错误位置与含义见[语法检查](/miacode/chart/validation#语法)。
+
+<figure class="doc-figure doc-figure--compact">
+<a :href="$withBase('/images/normalize.png')" target="_blank"><img class="interface-shot" src="/images/normalize.png" alt="谱面整理" width="840" height="536" loading="lazy"></a>
+</figure>
 
 ## 整理前后
 

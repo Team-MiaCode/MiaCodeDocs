@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 # Export
 
 Export features are documented separately:

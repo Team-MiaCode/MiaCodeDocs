@@ -13,16 +13,7 @@ Tap and Touch have separate flow speeds, controlling how quickly notes approach 
 | Center display | Chooses combo, achievement, DX score, or other information |
 | Judgment effects and text distance | Adjusts judgment feedback and its position |
 
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/preview_gameplay.png" alt="Tap and Touch speeds and game display settings">
-<figcaption>Tap and Touch use separate speeds. Stacking order controls which overlapping Slide appears on top.</figcaption>
-</figure>
-
 ## Video
-
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/preview_video.png" alt="Preview visual settings" loading="lazy">
-</figure>
 
 Inner brightness controls the background or PV inside the judgment circle; outer brightness controls the surrounding area. Lower inner brightness to emphasize notes while retaining the outer media. Stage size controls how much of the frame the playfield occupies.
 
@@ -30,8 +21,8 @@ Inner brightness controls the background or PV inside the judgment circle; outer
 
 The diagram uses the same 16:9 sample in four 4:3 frames. Gray areas represent margins. Numbers match the table; the circle marks the inner playfield.
 
-<figure class="doc-figure">
-<img src="/images/background-scale-modes.svg" alt="One sample shown with fill, contain, centered square, and inner-circle contain with outer fill">
+<figure class="doc-figure doc-diagram">
+<img src="/images/background-scale-modes.svg" alt="One sample shown with fill, contain, centered square, and inner-circle contain with outer fill" width="880" height="292" loading="lazy">
 <figcaption>Compare cropping of the colored edges and how much of the frame the sample occupies.</figcaption>
 </figure>
 
@@ -44,13 +35,10 @@ The diagram uses the same 16:9 sample in four 4:3 frames. Gray areas represent m
 
 Brightness smoothing, timestamps, and paused judgment areas have individual switches. Touch click input enables authoring from the preview; see [Text editor](/en/miacode/chart/text-editor#touch-input).
 
+While preview playback is paused, hold `Alt/⌥` to switch between judgment areas and the background / PV. Releasing the key restores the selected setting. Customize the hold gesture in [Preferences → Shortcuts](/en/miacode/settings/preferences#shortcuts).
+
 ## Skin
 
 Choose note skins, chart effects, and judgment-line styles, and manage assets with Open directory. HUD fonts are set per region, including center display, timestamps, and note counts. Choose an existing font, import a file, or reset the region's setting.
-
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/preview_skin.png" alt="Note skins, judgment lines, and HUD fonts by region">
-<figcaption>Select a HUD region, then choose or import a font for that region.</figcaption>
-</figure>
 
 See [Preferences → Performance](/en/miacode/settings/preferences#performance) for frame rates and decoding, and [Audio settings](/en/miacode/settings/audio) for volume.

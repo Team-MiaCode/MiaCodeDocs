@@ -49,7 +49,7 @@ pageClass: download-page
       </div>
     </div>
     <code class="download-file">MiaCode_2.0.0-alpha_mac_arm64.7z</code>
-    <a href="/miacode/quick-start#下载与启动">打不开的解决办法</a>
+    <a :href="$withBase('/miacode/quick-start#下载与启动')">打不开的解决办法</a>
     <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0-alpha/MiaCode_2.0.0-alpha_mac_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
   </section>
 </div>
@@ -68,7 +68,7 @@ pageClass: download-page
           </div>
         </div>
         <code class="download-file">MiaCode_1.2.0_win_x64.7z</code>
-        <span class="download-button">下载 .7z <span aria-hidden="true">↓</span></span>
+        <span class="download-meta">链接待补充</span>
       </section>
       <section class="download-card">
         <div class="download-card-head">
@@ -79,7 +79,7 @@ pageClass: download-page
           </div>
         </div>
         <code class="download-file">MiaCode_1.2.0_mac_arm64.7z</code>
-        <span class="download-button">下载 .7z <span aria-hidden="true">↓</span></span>
+        <span class="download-meta">链接待补充</span>
       </section>
     </div>
   </div>

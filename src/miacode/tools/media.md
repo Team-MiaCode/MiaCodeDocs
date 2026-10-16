@@ -2,8 +2,8 @@
 
 `工具` 菜单分别提供音频处理和视频处理。打开一个已保存的谱面后，工具使用该谱面目录中的歌曲与 PV。
 
-<figure class="doc-figure">
-<a :href="$withBase('/images/media_tools.png')" target="_blank"><img class="interface-shot" src="/images/media_tools.png" alt="音频与视频处理菜单" loading="lazy"></a>
+<figure class="doc-figure doc-figure--overview">
+<a :href="$withBase('/images/media_tools.png')" target="_blank"><img class="interface-shot" src="/images/media_tools.png" alt="音频与视频处理菜单" width="1520" height="480" loading="lazy"></a>
 </figure>
 
 ## FFmpeg
@@ -13,10 +13,6 @@
 出现 FFmpeg 路径提示时，按提示配置可执行文件后使用相关工具。
 
 ## 前置空白
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/prepend_audio.png')" target="_blank"><img class="interface-shot" src="/images/prepend_audio.png" alt="音频前置空白" loading="lazy"></a>
-</figure>
 
 `音频处理 track.mp3 → 前置空白` 在音频开头添加静音；`视频处理 pv.mp4 → 添加片头黑幕` 在视频开头添加黑幕。
 
@@ -33,10 +29,6 @@
 该功能使用 PV 中的音轨进行分析。视频压缩会移除音轨。
 
 ## 视频压缩
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/video_compression.png')" target="_blank"><img class="interface-shot" src="/images/video_compression.png" alt="批量视频压缩" loading="lazy"></a>
-</figure>
 
 `压缩当前视频` 将当前背景视频压缩到 20 MB 以下，并移除音轨。处理时会保存或覆盖同目录的 `_bak` 视频备份。
 

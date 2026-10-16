@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 # 新建谱面
 
 新建流程已合并到 [快速开始](/miacode/quick-start)。

@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 # 编辑区
 
 编辑器说明已移至 [文字编辑](/miacode/chart/text-editor)。

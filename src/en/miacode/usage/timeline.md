@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 # Timeline
 
 Timeline, syntax checks, and pattern warnings are documented separately:

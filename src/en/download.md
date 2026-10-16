@@ -49,7 +49,7 @@ Version <span class="download-version">2.0.0-alpha</span>, download, extract, an
       </div>
     </div>
     <code class="download-file">MiaCode_2.0.0-alpha_mac_arm64.7z</code>
-    <a href="/en/miacode/quick-start#download-and-launch">Troubleshooting launch issues</a>
+    <a :href="$withBase('/en/miacode/quick-start#download-and-launch')">Troubleshooting launch issues</a>
     <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0-alpha/MiaCode_2.0.0-alpha_mac_arm64.7z">Download .7z <span aria-hidden="true">↓</span></a>
   </section>
 </div>
@@ -68,7 +68,7 @@ Version <span class="download-version">2.0.0-alpha</span>, download, extract, an
           </div>
         </div>
         <code class="download-file">MiaCode_1.2.0_win_x64.7z</code>
-        <span class="download-button">Download .7z <span aria-hidden="true">↓</span></span>
+        <span class="download-meta">Link pending</span>
       </section>
       <section class="download-card">
         <div class="download-card-head">
@@ -79,7 +79,7 @@ Version <span class="download-version">2.0.0-alpha</span>, download, extract, an
           </div>
         </div>
         <code class="download-file">MiaCode_1.2.0_mac_arm64.7z</code>
-        <span class="download-button">Download .7z <span aria-hidden="true">↓</span></span>
+        <span class="download-meta">Link pending</span>
       </section>
     </div>
   </div>

@@ -2,22 +2,18 @@
 
 Open the information page from the Chart sidebar or Tools menu. It manages song fields, designer names, and chart media.
 
+<figure class="doc-figure doc-figure--panel">
+<a :href="$withBase('/images/information.png')" target="_blank"><img class="interface-shot" src="/images/information.png" alt="Chart information" width="1456" height="1168" loading="lazy"></a>
+<figcaption>Chart information</figcaption>
+</figure>
+
 ## Song fields
 
 Enter the title, artist, and designer. The read-from-audio command reads song information from a media file and fills the corresponding fields.
 
 Offset corresponds to simai `&first` and is measured in seconds. Count-in controls the beat count before playback. BPM and offset detection are described in [Latency calibration](/en/miacode/chart/latency-calibration).
 
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/information.png" alt="Chart information">
-<figcaption>Chart information</figcaption>
-</figure>
-
 ## Difficulties and designers
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/designer_names.png')" target="_blank"><img class="interface-shot" src="/images/designer_names.png" alt="Designer name management" loading="lazy"></a>
-</figure>
 
 Select a difficulty to enter its level and designer. Designer management supports separate names for each difficulty or a shared name across difficulties.
 

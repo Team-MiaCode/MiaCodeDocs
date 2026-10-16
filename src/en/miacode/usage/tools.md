@@ -1,3 +1,7 @@
+---
+search: false
+---
+
 # Tools
 
 Tool instructions are organized by task:

@@ -12,10 +12,10 @@ Open `File → Restore backup` to view records by time. Choose a version and con
 
 ## Abnormal exit
 
-<figure class="doc-figure">
-<a :href="$withBase('/images/backup_restore.png')" target="_blank"><img class="interface-shot" src="/images/backup_restore.png" alt="Restore from backup prompt" loading="lazy"></a>
-</figure>
-
 Open the chart from the abnormal session. A recoverable snapshot displays a recovery prompt. Choosing recovery loads the snapshot into the current document; saving writes it to the chart file.
+
+<figure class="doc-figure doc-figure--compact">
+<a :href="$withBase('/images/backup_restore.png')" target="_blank"><img class="interface-shot" src="/images/backup_restore.png" alt="Restore from backup prompt" width="920" height="284" loading="lazy"></a>
+</figure>
 
 The `.miacode` directory stores local backups and MiaCode settings. Media tools' `_bak` files restore processed media.

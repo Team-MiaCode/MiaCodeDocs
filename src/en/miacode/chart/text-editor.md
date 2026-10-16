@@ -1,15 +1,11 @@
 # Text editor
 
-Select or add a difficulty to write simai text. Preview and analysis update as you edit.
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/text_editor.png')" target="_blank"><img class="interface-shot" src="/images/text_editor.png" alt="Text editor" loading="lazy"></a>
-</figure>
+This page describes common text editing features in detail.
 
 ## Completion
 
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/completion.png" alt="Completion candidates" loading="lazy">
+<figure class="doc-figure doc-figure--compact">
+<a :href="$withBase('/images/completion.png')" target="_blank"><img class="interface-shot" src="/images/completion.png" alt="Completion candidates" width="420" height="420" loading="lazy"></a>
 </figure>
 
 Enable completion in [Preferences → Editor](/en/miacode/settings/preferences#completion). Typing `[`, `{`, or `(` opens the corresponding candidates. Typed text filters the list.
@@ -26,10 +22,6 @@ Add, reorder, and restore duration and subdivision candidates in [Custom candida
 
 ## Selection beats
 
-<figure class="doc-figure doc-figure--window">
-<a :href="$withBase('/images/selection_beats.png')" target="_blank"><img class="interface-shot" src="/images/selection_beats.png" alt="Selection and beat count in the status bar" loading="lazy"></a>
-</figure>
-
 Enable selection beat display in Preferences to show the selected text's beat count. A selection that cuts through a note or syntax element is marked as approximate.
 
 ## Selection tools
@@ -40,15 +32,26 @@ Select chart text and choose a command from `Transform` or the context menu. Not
 
 Horizontal and vertical mirrors, 180° rotation, and clockwise or counterclockwise 45° rotation change the selected Tap and Touch positions and Slide paths.
 
+With text selected, you can use the corresponding shortcut:
+
+| Command | Shortcut |
+| --- | --- |
+| Mirror horizontally / vertically | `Ctrl/⌘+J` / `Ctrl/⌘+K` |
+| Rotate 180° | `Ctrl/⌘+L` |
+| Rotate 45° counterclockwise / clockwise | `Ctrl/⌘+;` / `Ctrl/⌘+'` |
+
 ### Note subdivision adjustment
 
-Raising by one step doubles the subdivision and adds comma spacing to retain the original beat positions:
+Raising by one step doubles the subdivision and adds comma spacing to retain the original beat positions.
 
-| Before | After raising one step |
+For example, `{16}1,2,` becomes `{32}1,,2,,` after raising one step.
+
+Raising half a step multiplies the subdivision by 1.5; lowering applies the reverse adjustment. Select a passage and use the corresponding combination:
+
+| Command | Shortcut |
 | --- | --- |
-| `{16}1,2,` | `{32}1,,2,,` |
-
-Raising half a step multiplies the subdivision by 1.5; lowering applies the reverse adjustment.
+| Raise one / half a step | `Ctrl/⌘+=` / `Ctrl/⌘++` |
+| Lower one / half a step | `Ctrl/⌘+-` / `Ctrl/⌘+Shift+-` |
 
 ### Note transforms
 
@@ -60,44 +63,26 @@ Raising half a step multiplies the subdivision by 1.5; lowering applies the reve
 
 ## Touch input
 
-<figure class="doc-figure doc-figure--window">
-<a :href="$withBase('/images/touch_input.png')" target="_blank"><img class="interface-shot" src="/images/touch_input.png" alt="Touch input regions" loading="lazy"></a>
+Enable Touch click input in [Preview settings](/en/miacode/settings/preview#video). Pause playback, place the editor caret at the insertion point, and hold `Ctrl/⌘`. Left-click a Touch region in the preview to enter it in the current beat, or right-click to add a comma and enter it in the next beat. Left-clicking an ordinary Touch region already present in the current beat removes that Touch.
+
+For example, left-clicking A1 inserts `A1`, and clicking A2 next produces `A1/A2`.
+
+<figure class="doc-figure doc-figure--overview doc-figure--window">
+<a :href="$withBase('/images/touch_input.png')" target="_blank"><img class="interface-shot" src="/images/touch_input.png" alt="Touch input regions" width="2784" height="1824" loading="lazy"></a>
 </figure>
-
-Enable Touch click input in [Preview settings](/en/miacode/settings/preview#video). Pause playback, place the editor caret at the insertion point, hold `Ctrl` (`⌘` on macOS), and click a Touch region in the preview.
-
-Clicking A1 inserts `A1`. Clicking A2 next produces `A1/A2`. Simultaneous Touch notes are separated by `/`.
 
 ## Bookmarks
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/bookmarks.png')" target="_blank"><img class="interface-shot" src="/images/bookmarks.png" alt="Section comments and bookmarks" loading="lazy"></a>
-</figure>
-
-<figure class="doc-figure">
-<a :href="$withBase('/images/bookmark_edit.png')" target="_blank"><img class="interface-shot" src="/images/bookmark_edit.png" alt="Rename bookmark" loading="lazy"></a>
-</figure>
 
 Entering `|| [Chorus] Revise the rhythm here` creates a bookmark titled “Chorus”, with the remaining text as a note.
 
 Click a bookmark to jump to its line. Add, rename, and delete commands in the line-number margin edit that line's comment.
 
-## Find and replace
+With a bookmark row focused, press `F2` to rename it or `Delete` to remove it.
 
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/find_replace.png" alt="Find and replace" loading="lazy">
+<figure class="doc-figure doc-figure--compact">
+<a :href="$withBase('/images/bookmarks.png')" target="_blank"><img class="interface-shot" src="/images/bookmarks.png" alt="Section comments and bookmarks" width="620" height="420" loading="lazy"></a>
 </figure>
 
-Open `Edit → Find` or press `Ctrl+F` (`⌘F` on macOS) to find or replace the current match or all matches. Match case and whole-word options refine the query. `Enter` finds the next match, `Shift+Enter` finds the previous match, and `Esc` closes the panel.
+## Find and replace
 
-## Transform shortcuts
-
-| Action | Default | macOS |
-| --- | --- | --- |
-| Mirror left and right | `Ctrl+J` | `⌘J` |
-| Mirror up and down | `Ctrl+K` | `⌘K` |
-| Rotate 180° | `Ctrl+L` | `⌘L` |
-| Rotate counterclockwise 45° | `Ctrl+;` | `⌘;` |
-| Rotate clockwise 45° | `Ctrl+'` | `⌘'` |
-| Double subdivision | `Ctrl+=` | `⌘=` |
-| Halve subdivision | `Ctrl+-` | `⌘-` |
+Open `Edit → Find` or press `Ctrl/⌘+F` to find or replace the current match or all matches. Match case and whole-word options refine the query. In the search field, `Enter` finds the next match and `Shift+Enter` finds the previous match. In the replacement field, `Enter` replaces the current match. `Esc` closes the panel.

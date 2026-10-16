@@ -6,8 +6,8 @@
 
 语法检查解析 simai 文本，列出语法错误与兼容性警告。点击 `重新检查` 可更新检测结果。
 
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/syntax.png" alt="语法检查列表">
+<figure class="doc-figure doc-figure--panel">
+<a :href="$withBase('/images/syntax.png')" target="_blank"><img class="interface-shot" src="/images/syntax.png" alt="语法检查列表" width="1040" height="1404" loading="lazy"></a>
 <figcaption>语法检查列表</figcaption>
 </figure>
 
@@ -29,8 +29,8 @@
 
 无理检测使用 Muri 模拟手部动作与物件判定。列表显示类型、位置、相关物件与时间间隔。
 
-<figure class="doc-figure">
-<img class="interface-shot" src="/images/muri.png" alt="无理检测列表">
+<figure class="doc-figure doc-figure--panel">
+<a :href="$withBase('/images/muri.png')" target="_blank"><img class="interface-shot" src="/images/muri.png" alt="无理检测列表" width="1040" height="1404" loading="lazy"></a>
 <figcaption>无理检测列表</figcaption>
 </figure>
 
