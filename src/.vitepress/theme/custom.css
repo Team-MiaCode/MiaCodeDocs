@@ -224,6 +224,43 @@
     margin-top: 16px;
 }
 
+.download-archive .download-grid {
+    grid-template-columns: repeat(2, 220px);
+    justify-content: start;
+    gap: 12px;
+    margin: 12px 0 0;
+}
+
+.download-archive .download-card {
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 12px;
+}
+
+.download-archive .download-card-head {
+    gap: 10px;
+}
+
+.download-archive .download-os-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.vp-doc .download-archive .download-card h3 {
+    font-size: 15px;
+}
+
+.vp-doc .download-archive .download-arch,
+.vp-doc .download-archive .download-file {
+    font-size: 12px;
+}
+
+.vp-doc .download-archive .download-button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
 /* ---------- 页脚 ---------- */
 
 .mia-footer {
@@ -279,6 +316,10 @@
 @media (max-width: 768px) {
     .download-grid {
         grid-template-columns: minmax(0, 1fr);
+    }
+
+    .download-archive .download-grid {
+        grid-template-columns: minmax(0, 220px);
     }
 }
 
