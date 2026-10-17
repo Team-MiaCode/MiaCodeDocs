@@ -1,0 +1,210 @@
+.Layout:not(.home-slim) .VPNavBarSearch {
+    flex: 0 1 320px;
+    min-width: 0;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+@media (min-width: 960px) {
+    .Layout:not(.home-slim) .VPNavBar.has-sidebar .VPNavBarSearch {
+        margin-left: calc((100% - 288px) / 2);
+    }
+}
+
+@media (min-width: 1280px) {
+    .Layout:not(.home-slim) .VPNavBar.has-sidebar .VPNavBarSearch {
+        margin-left: calc((100% - 544px) / 2);
+    }
+}
+
+@media (max-width: 959px) {
+    .Layout:not(.home-slim) .VPNavBar,
+    .Layout:not(.home-slim) .VPNavBar .wrapper > .container {
+        height: 120px;
+    }
+
+    .Layout:not(.home-slim) .VPNavBarSearch {
+        position: absolute;
+        top: 64px;
+        left: max(0px, calc((100% - 688px) / 2));
+        right: max(0px, calc((100% - 688px) / 2));
+        margin-right: 0;
+    }
+}
+
+.VPNavBarSearch #local-search {
+    width: 100%;
+}
+
+.VPNavBarSearch .DocSearch-Button {
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 12px;
+    background: var(--vp-c-default-soft);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.VPNavBarSearch .DocSearch-Button:hover,
+.VPNavBarSearch .DocSearch-Button:focus-visible {
+    border-color: var(--vp-c-brand-1);
+    background: var(--vp-c-bg);
+    box-shadow: 0 0 0 3px var(--vp-c-brand-soft);
+    outline: none;
+}
+
+.VPNavBarSearch .DocSearch-Button-Container {
+    gap: 10px;
+    min-width: 0;
+}
+
+.VPNavBarSearch .DocSearch-Search-Icon {
+    top: 0;
+    flex: none;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    color: var(--vp-c-text-2);
+}
+
+.VPNavBarSearch .DocSearch-Button-Placeholder {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.VPNavBarSearch .DocSearch-Button-Keys {
+    flex: none;
+    padding: 0 6px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 5px;
+    background: var(--vp-c-bg);
+}
+
+.VPNavBarSearch .DocSearch-Button-Key,
+.VPNavBarSearch .DocSearch-Button-Key + .DocSearch-Button-Key {
+    height: 22px;
+    margin: 0;
+    padding: 0 2px;
+    border: 0;
+    border-radius: 0;
+    line-height: 22px;
+    box-shadow: none;
+}
+
+html .VPLocalSearchBox {
+    --vp-local-search-highlight-bg: var(--vp-c-brand-soft);
+    --vp-local-search-highlight-text: var(--vp-c-brand-1);
+}
+
+html .VPLocalSearchBox .backdrop {
+    background: rgb(0 0 0 / 32%);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+html .VPLocalSearchBox .shell {
+    width: min(680px, calc(100vw - 40px));
+    height: min-content;
+    max-height: min(72vh, 680px);
+    max-height: min(72dvh, 680px);
+    margin: 14vh auto;
+    padding: 12px;
+    gap: 12px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 20px;
+    background: var(--vp-c-bg);
+    box-shadow: 0 24px 80px rgb(0 0 0 / 24%);
+}
+
+html .VPLocalSearchBox .search-bar {
+    padding: 0 12px;
+    border-color: transparent;
+    border-radius: 12px;
+    background: var(--vp-c-default-soft);
+}
+
+html .VPLocalSearchBox .search-bar:focus-within {
+    border-color: var(--vp-c-brand-1);
+    box-shadow: 0 0 0 3px var(--vp-c-brand-soft);
+}
+
+html .VPLocalSearchBox .search-input {
+    height: 52px;
+    padding: 0 12px;
+    font-size: 16px;
+}
+
+html .VPLocalSearchBox .search-input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+html .VPLocalSearchBox .clear-button .local-search-icon {
+    --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6 6 12 12M6 18 18 6' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+html .VPLocalSearchBox .results {
+    padding: 2px;
+    gap: 6px;
+}
+
+html .VPLocalSearchBox .result {
+    border-width: 1px;
+    border-color: transparent;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+html .VPLocalSearchBox .result.selected {
+    border-color: var(--vp-c-brand-soft);
+    background: var(--vp-c-brand-soft);
+}
+
+html .VPLocalSearchBox .result > div {
+    margin: 14px;
+}
+
+html .VPLocalSearchBox .search-keyboard-shortcuts {
+    padding: 4px 8px 2px;
+    color: var(--vp-c-text-2);
+    opacity: 1;
+}
+
+html .VPLocalSearchBox .search-keyboard-shortcuts kbd {
+    box-shadow: none;
+}
+
+@media (max-width: 767px) {
+    .Layout:not(.home-slim) .VPNavBarSearch {
+        left: 0;
+        right: 16px;
+    }
+
+    html .VPLocalSearchBox .shell {
+        width: calc(100vw - 24px);
+        max-height: 80vh;
+        max-height: 80dvh;
+        margin: 10vh auto;
+        margin: 10dvh auto;
+        padding: 8px;
+        border-radius: 18px;
+    }
+
+    html .VPLocalSearchBox .search-bar {
+        padding: 0 4px;
+    }
+
+    html .VPLocalSearchBox .search-input {
+        padding: 0 6px;
+    }
+}

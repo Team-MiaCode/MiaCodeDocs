@@ -1,0 +1,328 @@
+/* nav-floating.css：全站导航统一为下载与 GitHub 入口，首页滚动后收缩为悬浮胶囊 */
+
+html .VPNavBar .VPNavBarTitle.has-sidebar > .title {
+    border-bottom-color: transparent;
+}
+
+.VPNavBar .VPNavBarMenu,
+.VPNavBar .VPNavBarSocialLinks,
+.home-slim .VPNavBar .VPNavBarSearch {
+    display: none;
+}
+
+.VPNavBar .VPNavBarTranslations,
+.VPNavBar .VPNavBarAppearance {
+    display: flex;
+    align-items: center;
+    order: 1;
+}
+
+.VPNavBar .VPNavBarExtra,
+.VPNavBar .VPNavBarHamburger {
+    display: none;
+}
+
+.VPNavBar .content-body {
+    column-gap: 8px;
+}
+
+html .VPNav .VPNavBar :is(.VPNavBarTranslations, .VPNavBarAppearance, .VPNavBarSocialLinks)::before {
+    content: none;
+}
+
+.VPNavBar .wrapper > .container {
+    position: relative;
+    transition:
+        max-width 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+        height 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+        padding 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+        border-radius 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+        border-color 0.32s ease,
+        background-color 0.32s ease,
+        box-shadow 0.32s ease;
+}
+
+.home-slim .VPNavBar .wrapper > .container {
+    z-index: 0;
+    border: 1px solid transparent;
+}
+
+.home-slim .VPNavBar .wrapper > .container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background-color: var(--mia-glass-bg);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    backdrop-filter: blur(18px) saturate(160%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.24s ease;
+}
+
+html.nav-floating .VPNavBar .wrapper > .container::before {
+    opacity: 1;
+}
+
+.VPNavBar .content {
+    transition: padding-right 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.VPNavBar .wrapper {
+    transition: padding 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.VPNavBar .wrapper > .container > .title,
+.VPNavBar .content-body,
+.VPNavBar .VPNavBarTitle > .title {
+    transition: height 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+        padding-left 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+        column-gap 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html:is(:not(.nav-ready), .nav-instant) .VPNav,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBar,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBar .wrapper > .container,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBar .wrapper > .container::before,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBar .wrapper,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBar .content,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBar .wrapper > .container > .title,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBar .content-body,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBar .VPNavBarTitle > .title,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBarTranslations,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBarAppearance,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBarExtra,
+html:is(:not(.nav-ready), .nav-instant) .VPNavBarHamburger,
+html:is(:not(.nav-ready), .nav-instant) .nav-quick-actions {
+    transition: none !important;
+}
+
+@media (min-width: 960px) {
+    .home-slim .VPNavBar .wrapper {
+        padding: 0;
+    }
+
+    .home-slim .VPNavBar .wrapper > .container {
+        max-width: 100%;
+    }
+
+    .home-slim .VPNavBar .wrapper > .container > .title {
+        padding-left: max(32px, calc((100% - (var(--vp-layout-max-width) - 64px)) / 2));
+    }
+
+    .home-slim .VPNavBar .content {
+        padding-right: max(32px, calc((100vw - var(--vp-layout-max-width)) / 2 + 32px));
+    }
+}
+
+.nav-quick-actions {
+    display: none;
+    align-items: center;
+    gap: 4px;
+}
+
+.home-slim .nav-quick-actions,
+html.nav-floating .nav-quick-actions {
+    display: flex;
+}
+
+@media (min-width: 960px) {
+    .nav-quick-actions {
+        display: flex;
+    }
+}
+
+.nav-quick-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 999px;
+    color: var(--vp-c-text-2);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.nav-quick-action:hover {
+    color: var(--vp-c-text-1);
+    background-color: var(--vp-c-default-soft);
+}
+
+.nav-quick-action--download,
+.nav-quick-action--download:hover {
+    background-color: var(--vp-button-brand-bg);
+    color: var(--vp-button-brand-text);
+}
+
+.nav-quick-action--download:hover {
+    background-color: var(--vp-button-brand-hover-bg);
+}
+
+.nav-quick-icon {
+    flex: none;
+    width: 16px;
+    height: 16px;
+}
+
+.home-slim {
+    --vp-nav-bg-color: transparent;
+}
+
+html .home-slim .VPNav .VPNavBar {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+html .home-slim .VPNavBar .content-body {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+html.nav-floating .VPNavBar .wrapper {
+    padding: 10px 16px 0;
+}
+
+html.nav-floating .VPNavBar .wrapper > .container > .title {
+    padding-left: 0;
+}
+
+html.nav-floating .VPNavBar .content {
+    padding-right: 0;
+}
+
+html.nav-floating .VPNavBar .wrapper > .container {
+    max-width: 920px;
+    height: 54px;
+    padding: 0 8px 0 12px;
+    border-color: var(--vp-c-divider);
+    border-radius: 999px;
+    box-shadow: 0 12px 32px rgb(0 0 0 / 12%);
+}
+
+html.dark.nav-floating .VPNavBar .wrapper > .container {
+    box-shadow: 0 12px 32px rgb(0 0 0 / 36%);
+}
+
+html.nav-floating .VPNavBar .wrapper > .container > .title,
+html.nav-floating .VPNavBar .content-body {
+    height: 52px;
+}
+
+html.nav-floating .VPNavBar .VPNavBarTitle > .title {
+    height: 52px;
+}
+
+html.nav-floating .VPNavBar .VPNavBarSearch,
+html.nav-floating .VPNavBar .VPNavBarMenu,
+html.nav-floating .VPNavBar .VPNavBarSocialLinks {
+    display: none;
+}
+
+.VPNavBar .VPNavBarTranslations,
+.VPNavBar .VPNavBarAppearance,
+.VPNavBar .VPNavBarExtra,
+.VPNavBar .VPNavBarHamburger {
+    flex-shrink: 0;
+    min-width: 0;
+    transition: max-width 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+        margin-right 0.42s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+}
+
+html.nav-floating .VPNavBar .VPNavBarTranslations,
+html.nav-floating .VPNavBar .VPNavBarAppearance,
+html.nav-floating .VPNavBar .VPNavBarExtra,
+html.nav-floating .VPNavBar .VPNavBarHamburger {
+    max-width: 0;
+    margin-right: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+@media (max-width: 959px) {
+    .home-slim .VPNav {
+        position: fixed;
+        top: 0;
+    }
+
+    .home-slim .VPNavBar .wrapper {
+        padding: 0 clamp(16px, 4vw, 32px);
+    }
+}
+
+html.nav-floating .VPNavBar .content-body {
+    column-gap: 0;
+}
+
+@media (max-width: 480px) {
+    .VPNavBar .content-body {
+        column-gap: 4px;
+    }
+
+    .nav-quick-action {
+        padding: 0 8px;
+    }
+
+    .VPNavBar .VPNavBarTranslations > .button {
+        padding: 0 8px;
+    }
+
+    .nav-quick-action span {
+        display: none;
+    }
+
+    html.nav-floating .VPNavBar .wrapper {
+        padding: 10px 12px 0;
+    }
+}
+
+@media (max-width: 959px) and (orientation: portrait) {
+    html.nav-floating .VPNavBar .wrapper {
+        padding: 12px max(24px, env(safe-area-inset-right)) 0 max(24px, env(safe-area-inset-left));
+    }
+
+    html.nav-floating .nav-quick-action {
+        justify-content: center;
+        width: 36px;
+        padding: 0;
+    }
+
+    html.nav-floating .nav-quick-action span {
+        display: none;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .home-slim .VPNavBar .wrapper > .container::before {
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+    }
+
+    html.nav-floating .VPNavBar .wrapper > .container {
+        box-shadow: 0 6px 18px rgb(0 0 0 / 12%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-slim .VPNavBar .wrapper > .container::before,
+    .VPNavBar .wrapper > .container,
+    .VPNavBar .wrapper,
+    .VPNavBar .wrapper > .container > .title,
+    .VPNavBar .content-body,
+    .VPNavBar .VPNavBarTitle > .title,
+    .VPNavBar .content,
+    .VPNavBar .VPNavBarTranslations,
+    .VPNavBar .VPNavBarAppearance,
+    .VPNavBar .VPNavBarExtra,
+    .VPNavBar .VPNavBarHamburger,
+    .nav-quick-actions,
+    .nav-quick-action {
+        transition: none;
+    }
+}

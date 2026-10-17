@@ -4,6 +4,10 @@ export const zh = defineConfig({
   lang: 'zh-CN',
   description: 'MiaCode 使用文档与 simai 谱面创作参考',
   themeConfig: {
+    sidebarMenuLabel: '目录',
+    returnToTopLabel: '回到顶部',
+    lightModeSwitchTitle: '切换浅色配色',
+    darkModeSwitchTitle: '切换深色配色',
     editLink: {
       pattern: 'https://github.com/Team-MiaCode/MiaCodeDocs/edit/main/src/:path',
       text: '在 GitHub 上编辑此页面'

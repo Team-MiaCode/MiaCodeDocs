@@ -4,6 +4,7 @@
  * brand-1 用于链接与强调文字，brand-3 用于按钮底色（白字对比度 ≥ 4.5）。
  */
 :root {
+  --mia-glass-bg: rgba(255, 255, 255, 0.74);
   --vp-c-brand-1: #be185d;
   --vp-c-brand-2: #c81e6c;
   --vp-c-brand-3: #db2777;
@@ -16,6 +17,7 @@
 }
 
 .dark {
+  --mia-glass-bg: rgba(27, 27, 31, 0.74);
   --vp-c-brand-1: #f9a8d4;
   --vp-c-brand-2: #ec4899;
   --vp-c-brand-3: #db2777;

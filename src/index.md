@@ -1,5 +1,6 @@
 ---
 layout: home
+pageClass: home-slim
 
 title: MiaCode
 titleTemplate: simai 谱面创作工具
@@ -44,8 +45,3 @@ features:
     link: /miacode/export/video
     linkText: 导出说明
 ---
-
-<section class="home-showcase">
-  <a class="showcase-dark doc-figure doc-figure--overview doc-figure--window" :href="$withBase('/images/main_dark.png')" target="_blank"><img src="/images/main_dark.png" alt="MiaCode 深色主题" width="2864" height="1864" loading="lazy"></a>
-  <a class="showcase-light doc-figure doc-figure--overview doc-figure--window" :href="$withBase('/images/main_light.png')" target="_blank"><img src="/images/main_light.png" alt="MiaCode 浅色主题与分离预览" width="2864" height="1864" loading="lazy"></a>
-</section>

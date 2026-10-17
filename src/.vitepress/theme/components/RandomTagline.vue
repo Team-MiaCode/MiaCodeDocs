@@ -41,11 +41,4 @@ onMounted(() => {
   }
 }
 
-@media (min-width: 960px) {
-  .random-tagline {
-    margin: 0;
-    line-height: 36px;
-    font-size: 24px;
-  }
-}
 </style>
