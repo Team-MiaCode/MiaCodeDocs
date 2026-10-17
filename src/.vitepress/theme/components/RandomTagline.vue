@@ -16,7 +16,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <p class="random-tagline">{{ text || '\u00a0' }}</p>
+  <p class="random-tagline">{{ text ? `“${text}”` : '\u00a0' }}</p>
 </template>
 
 <style scoped>
@@ -27,6 +27,7 @@ onMounted(() => {
   line-height: 28px;
   font-size: 18px;
   font-weight: 500;
+  font-style: italic;
   color: var(--vp-c-text-2);
   overflow-wrap: anywhere;
   text-wrap: balance;
