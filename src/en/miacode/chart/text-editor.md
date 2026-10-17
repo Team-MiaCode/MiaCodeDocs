@@ -1,7 +1,5 @@
 # Text editor
 
-This page describes common text editing features in detail.
-
 ## Completion
 
 <figure class="doc-figure doc-figure--compact">

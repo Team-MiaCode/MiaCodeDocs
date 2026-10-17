@@ -8,7 +8,7 @@ This page covers creating, opening, editing, and saving charts in 2.0.0-alpha.
 
 ## Download and launch
 
-Get a package from [Download MiaCode](/en/download), extract it, and launch the application.
+Get a package from [Download MiaCode](/en/download).
 
 - **Windows**: open `MiaCode.exe` in the extracted folder.
 - **macOS**: open `MiaCode.app`, or move it to Applications. If macOS blocks it through quarantine, run this in Terminal from the extracted folder before launching:

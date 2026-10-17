@@ -8,7 +8,7 @@
 
 ## 下载与启动
 
-各平台安装包见[下载 MiaCode](/download)，解压后启动。
+各平台安装包见[下载 MiaCode](/download)。
 
 - **Windows**：打开解压目录中的 `MiaCode.exe`。
 - **macOS**：打开 `MiaCode.app`，也可放入“应用程序”文件夹。遇到系统隔离提示时，在解压目录的终端执行以下命令后启动：

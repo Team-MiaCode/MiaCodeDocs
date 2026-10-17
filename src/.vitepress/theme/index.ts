@@ -32,12 +32,15 @@ export default {
       useHeroMotion()
       const sidebarNavigation = useSidebarNavigation()
       const { frontmatter, lang } = useData()
-      const navTitle = computed(() => frontmatter.value.layout === 'home'
-        ? 'MiaCode'
-        : lang.value.startsWith('en') ? 'Documentation' : '使用说明')
+      const navTitle = computed(() => {
+        if (frontmatter.value.pageClass === 'download-page') return ''
+        return frontmatter.value.layout === 'home'
+          ? 'MiaCode'
+          : lang.value.startsWith('en') ? 'Documentation' : '使用说明'
+      })
       return () => h(DefaultTheme.Layout, sidebarNavigation, {
         'layout-top': () => [h(NolebaseHighlightTargetedHeading), h(NavBrandFeedback)],
-        'nav-bar-title-after': () => h('span', navTitle.value),
+        'nav-bar-title-after': () => navTitle.value ? h('span', navTitle.value) : null,
         'nav-bar-content-after': () => h(NavQuickActions),
         'home-hero-info-after': () => h(RandomTagline),
         'home-features-before': () => h(HomeShowcase),

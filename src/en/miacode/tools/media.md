@@ -10,8 +10,6 @@ The Tools menu provides separate audio and video processing menus. The tools use
 
 Media processing and video export use FFmpeg. FFmpeg search locations include the MiaCode folder, bundled tool locations, and system PATH. `MIACODE_FFMPEG_PATH` can specify its location.
 
-Configure the executable according to the path message if a tool reports that FFmpeg is needed.
-
 ## Prepend blank
 
 Audio prepend inserts silence at the start of `track.mp3`. Video prepend inserts black frames at the start of PV.

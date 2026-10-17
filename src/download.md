@@ -11,7 +11,7 @@ pageClass: download-page
 
 # 下载 MiaCode
 
-版本号 <span class="download-version">2.0.0-alpha</span>，下载后解压运行。 {.download-meta}
+版本号 <span class="download-version">2.0.0-alpha</span> {.download-meta}
 
 <!-- 维护下载链接时，以 MiaCode dev 分支 docs/ops/RELEASE_CHECKLIST.md 的
      Update Manifest 章节及线上 update/2/latest.json 为准。
@@ -68,7 +68,7 @@ pageClass: download-page
           </div>
         </div>
         <code class="download-file">MiaCode_1.2.0_win_x64.7z</code>
-        <span class="download-meta">链接待补充</span>
+        <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/1.2.0/MiaCode_1.2.0_win_x64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
       </section>
       <section class="download-card">
         <div class="download-card-head">
@@ -79,7 +79,7 @@ pageClass: download-page
           </div>
         </div>
         <code class="download-file">MiaCode_1.2.0_mac_arm64.7z</code>
-        <span class="download-meta">链接待补充</span>
+        <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/1.2.0/MiaCode_1.2.0_mac_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
       </section>
     </div>
   </div>

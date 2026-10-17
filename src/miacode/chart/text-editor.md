@@ -1,7 +1,5 @@
 # 文字编辑
 
-该页用于详细描述文字编辑下的常用功能。
-
 ## 自动补全
 
 <figure class="doc-figure doc-figure--compact">
