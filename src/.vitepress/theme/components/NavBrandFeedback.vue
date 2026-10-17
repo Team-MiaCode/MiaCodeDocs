@@ -5,6 +5,9 @@ import { onBeforeUnmount, onMounted, ref } from 'vue'
 const { frontmatter } = useData()
 const router = useRouter()
 const visible = ref(false)
+const messages = ['不可以打我哟', '诶呦']
+const message = ref(messages[0])
+let nextMessageIndex = 0
 let timer = 0
 
 function onBrandClick(event: MouseEvent) {
@@ -16,6 +19,8 @@ function onBrandClick(event: MouseEvent) {
     event.preventDefault()
     event.stopPropagation()
     window.clearTimeout(timer)
+    message.value = messages[nextMessageIndex]
+    nextMessageIndex = (nextMessageIndex + 1) % messages.length
     visible.value = true
     timer = window.setTimeout(() => { visible.value = false }, 2400)
   } else if (event.button === 0
@@ -46,7 +51,7 @@ onBeforeUnmount(() => {
   <Teleport to="body">
     <Transition name="brand-toast">
       <div v-if="visible" class="brand-toast" role="status" aria-live="polite">
-        不要点我，操你妈
+        {{ message }}
       </div>
     </Transition>
   </Teleport>
