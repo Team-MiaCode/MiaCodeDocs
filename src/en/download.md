@@ -11,7 +11,7 @@ pageClass: download-page
 
 # Download MiaCode
 
-Version <span class="download-version">2.0.0-alpha</span> {.download-meta}
+Version <span class="download-version">2.0.0</span> {.download-meta}
 
 <!-- Keep links in sync with docs/ops/RELEASE_CHECKLIST.md on MiaCode dev and
      the live update/2/latest.json manifest.
@@ -26,8 +26,8 @@ Version <span class="download-version">2.0.0-alpha</span> {.download-meta}
         <p class="download-arch">x64</p>
       </div>
     </div>
-    <code class="download-file">MiaCode_2.0.0-alpha_win_x64.7z</code>
-    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0-alpha/MiaCode_2.0.0-alpha_win_x64.7z">Download .7z <span aria-hidden="true">↓</span></a>
+    <code class="download-file">MiaCode_2.0.0_win_x64.7z</code>
+    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_win_x64.7z">Download .7z <span aria-hidden="true">↓</span></a>
   </section>
   <section class="download-card">
     <div class="download-card-head">
@@ -37,8 +37,8 @@ Version <span class="download-version">2.0.0-alpha</span> {.download-meta}
         <p class="download-arch">ARM64</p>
       </div>
     </div>
-    <code class="download-file">MiaCode_2.0.0-alpha_win_arm64.7z</code>
-    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0-alpha/MiaCode_2.0.0-alpha_win_arm64.7z">Download .7z <span aria-hidden="true">↓</span></a>
+    <code class="download-file">MiaCode_2.0.0_win_arm64.7z</code>
+    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_win_arm64.7z">Download .7z <span aria-hidden="true">↓</span></a>
   </section>
   <section class="download-card">
     <div class="download-card-head">
@@ -48,9 +48,9 @@ Version <span class="download-version">2.0.0-alpha</span> {.download-meta}
         <p class="download-arch">Apple silicon</p>
       </div>
     </div>
-    <code class="download-file">MiaCode_2.0.0-alpha_mac_arm64.7z</code>
+    <code class="download-file">MiaCode_2.0.0_mac_arm64.7z</code>
     <a class="download-help" :href="$withBase('/en/miacode/quick-start#download-and-launch')">Troubleshooting launch issues</a>
-    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0-alpha/MiaCode_2.0.0-alpha_mac_arm64.7z">Download .7z <span aria-hidden="true">↓</span></a>
+    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_mac_arm64.7z">Download .7z <span aria-hidden="true">↓</span></a>
   </section>
 </div>
 
