@@ -338,6 +338,17 @@
 }
 
 
+.vp-doc .download-help {
+    color: var(--vp-c-text-3);
+    font-size: 13px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.vp-doc .download-help:hover {
+    color: var(--vp-c-text-2);
+}
+
 .vp-doc .download-button {
     display: inline-flex;
     align-items: center;
@@ -402,41 +413,83 @@
     margin-top: 16px;
 }
 
-.download-archive .download-grid {
-    grid-template-columns: repeat(2, 220px);
-    justify-content: start;
-    gap: 12px;
-    margin: 12px 0 0;
+.vp-doc .download-archive-table {
+    display: table;
+    width: 100%;
+    margin: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 14px;
 }
 
-.download-archive .download-card {
-    gap: 12px;
-    padding: 14px 16px;
-    border-radius: 12px;
+.vp-doc .download-archive-table tr {
+    border: 0;
+    border-bottom: 1px solid var(--vp-c-divider);
+    background: transparent;
 }
 
-.download-archive .download-card-head {
-    gap: 10px;
+.vp-doc .download-archive-table th,
+.vp-doc .download-archive-table td {
+    padding: 14px 8px;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    vertical-align: middle;
 }
 
-.download-archive .download-os-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.vp-doc .download-archive .download-card h3 {
-    font-size: 15px;
-}
-
-.vp-doc .download-archive .download-arch,
-.vp-doc .download-archive .download-file {
+.vp-doc .download-archive-table th {
+    color: var(--vp-c-text-2);
     font-size: 12px;
+    font-weight: 500;
 }
 
-.vp-doc .download-archive .download-button {
-    padding: 6px 12px;
-    border-radius: 6px;
+.vp-doc .download-archive-table :is(th, td):first-child {
+    width: 80px;
+    padding-left: 0;
+}
+
+.vp-doc .download-archive-table :is(th, td):nth-child(2) {
+    width: 175px;
+}
+
+.vp-doc .download-archive-table :is(th, td):last-child {
+    width: 64px;
+    padding-right: 0;
+    text-align: right;
+}
+
+.download-archive-table .download-version {
+    margin: 0;
+}
+
+.download-archive-arch {
+    color: var(--vp-c-text-2);
     font-size: 13px;
+}
+
+.vp-doc .download-archive-table .download-file {
+    color: var(--vp-c-text-2);
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.vp-doc .download-archive-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 44px;
+    padding: 0 8px;
+    color: var(--vp-c-brand-1);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.vp-doc .download-archive-link:hover {
+    color: var(--vp-c-brand-2);
+    text-decoration: underline;
 }
 
 /* ---------- 页脚 ---------- */
@@ -496,13 +549,44 @@
         grid-template-columns: minmax(0, 1fr);
     }
 
-    .download-archive .download-grid {
-        grid-template-columns: minmax(0, 220px);
-    }
 }
 
 @media (max-width: 640px) {
-        .mia-footer-inner {
+    .vp-doc .download-archive-table,
+    .vp-doc .download-archive-table tbody {
+        display: block;
+    }
+
+    .vp-doc .download-archive-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+
+    .vp-doc .download-archive-table tbody tr {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 6px 12px;
+        padding: 16px 0;
+    }
+
+    .vp-doc .download-archive-table td {
+        grid-column: 1;
+        width: auto !important;
+        min-width: 0;
+        padding: 0;
+    }
+
+    .vp-doc .download-archive-table td:last-child {
+        grid-column: 2;
+        grid-row: 1 / 4;
+    }
+
+    .mia-footer-inner {
         gap: 24px;
     }
 }

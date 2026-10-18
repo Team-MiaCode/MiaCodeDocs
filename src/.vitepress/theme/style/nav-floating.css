@@ -6,7 +6,8 @@ html .VPNavBar .VPNavBarTitle.has-sidebar > .title {
 
 .VPNavBar .VPNavBarMenu,
 .VPNavBar .VPNavBarSocialLinks,
-.home-slim .VPNavBar .VPNavBarSearch {
+.home-slim .VPNavBar .VPNavBarSearch,
+.download-page .VPNavBar .VPNavBarSearch {
     display: none;
 }
 
@@ -123,6 +124,7 @@ html:is(:not(.nav-ready), .nav-instant) .nav-quick-actions {
 }
 
 .home-slim .nav-quick-actions,
+.download-page .nav-quick-actions,
 html.nav-floating .nav-quick-actions {
     display: flex;
 }
@@ -279,6 +281,32 @@ html.nav-floating .VPNavBar .content-body {
 
     html.nav-floating .VPNavBar .wrapper {
         padding: 10px 12px 0;
+    }
+}
+
+@media (max-width: 639px) {
+    .download-page .VPNavBarTitle > .title > span,
+    .download-page .nav-quick-action--github {
+        display: none;
+    }
+
+    .download-page .nav-quick-action--home span,
+    .download-page .nav-quick-action--docs span {
+        display: inline;
+    }
+
+    .download-page .nav-quick-action {
+        padding: 0 6px;
+    }
+
+    .download-page .nav-quick-actions {
+        gap: 0;
+    }
+}
+
+@media (max-width: 359px) {
+    .download-page .nav-quick-action--home span[aria-hidden="true"] {
+        display: none;
     }
 }
 

@@ -8,7 +8,10 @@ const router = useRouter()
 
 const isEn = computed(() => lang.value.startsWith('en'))
 const isHome = computed(() => frontmatter.value.layout === 'home')
+const isDownload = computed(() => frontmatter.value.pageClass === 'download-page')
 const downloadLink = computed(() => withBase(isEn.value ? '/en/download' : '/download'))
+const homeLink = computed(() => withBase(isEn.value ? '/en/' : '/'))
+const docsLink = computed(() => withBase(isEn.value ? '/en/miacode/quick-start' : '/miacode/quick-start'))
 
 let frame = 0
 let lastFloating = false
@@ -114,7 +117,7 @@ function isEditingContent(event: KeyboardEvent) {
 }
 
 function blockSearchHotkey(event: KeyboardEvent) {
-  if (frontmatter.value.layout !== 'home') return
+  if (!isHome.value && !isDownload.value) return
   const cmdK = event.key.toLowerCase() === 'k' && (event.metaKey || event.ctrlKey)
   const slash = event.key === '/' && !isEditingContent(event)
   if (!cmdK && !slash) return
@@ -152,15 +155,24 @@ watch(() => route.path, () => {
 </script>
 
 <template>
-  <div v-if="isHome" class="nav-quick-actions">
-    <a class="nav-quick-action nav-quick-action--download" :href="downloadLink" :aria-label="isEn ? 'Download' : '下载'">
+  <div v-if="isHome || isDownload" class="nav-quick-actions">
+    <template v-if="isDownload">
+      <a class="nav-quick-action nav-quick-action--home" :href="homeLink">
+        <span aria-hidden="true">←</span>
+        <span>{{ isEn ? 'Home' : '返回首页' }}</span>
+      </a>
+      <a class="nav-quick-action nav-quick-action--docs" :href="docsLink">
+        <span>{{ isEn ? 'Documentation' : '使用文档' }}</span>
+      </a>
+    </template>
+    <a v-else class="nav-quick-action nav-quick-action--download" :href="downloadLink" :aria-label="isEn ? 'Download' : '下载'">
       <svg class="nav-quick-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
         <path d="M8 2v7.5m0 0L5 6.5m3 3 3-3M2.5 11v1.5A1.5 1.5 0 0 0 4 14h8a1.5 1.5 0 0 0 1.5-1.5V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
       <span>{{ isEn ? 'Download' : '下载' }}</span>
     </a>
     <a
-      class="nav-quick-action"
+      class="nav-quick-action nav-quick-action--github"
       href="https://github.com/Team-MiaCode/MiaCode"
       target="_blank"
       rel="noreferrer"

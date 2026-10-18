@@ -33,7 +33,7 @@ export default {
       const sidebarNavigation = useSidebarNavigation()
       const { frontmatter, lang } = useData()
       const navTitle = computed(() => {
-        if (frontmatter.value.pageClass === 'download-page') return ''
+        if (frontmatter.value.pageClass === 'download-page') return 'MiaCode'
         return frontmatter.value.layout === 'home'
           ? 'MiaCode'
           : lang.value.startsWith('en') ? 'Documentation' : '使用说明'
