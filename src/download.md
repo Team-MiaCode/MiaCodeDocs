@@ -11,7 +11,7 @@ pageClass: download-page
 
 # 下载 MiaCode
 
-版本号 <span class="download-version">2.0.0-alpha</span> {.download-meta}
+版本号 <span class="download-version">2.0.0</span> {.download-meta}
 
 <!-- 维护下载链接时，以 MiaCode dev 分支 docs/ops/RELEASE_CHECKLIST.md 的
      Update Manifest 章节及线上 update/2/latest.json 为准。
@@ -26,8 +26,8 @@ pageClass: download-page
         <p class="download-arch">x64</p>
       </div>
     </div>
-    <code class="download-file">MiaCode_2.0.0-alpha_win_x64.7z</code>
-    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0-alpha/MiaCode_2.0.0-alpha_win_x64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
+    <code class="download-file">MiaCode_2.0.0_win_x64.7z</code>
+    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_win_x64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
   </section>
   <section class="download-card">
     <div class="download-card-head">
@@ -37,8 +37,8 @@ pageClass: download-page
         <p class="download-arch">ARM64</p>
       </div>
     </div>
-    <code class="download-file">MiaCode_2.0.0-alpha_win_arm64.7z</code>
-    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0-alpha/MiaCode_2.0.0-alpha_win_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
+    <code class="download-file">MiaCode_2.0.0_win_arm64.7z</code>
+    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_win_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
   </section>
   <section class="download-card">
     <div class="download-card-head">
@@ -48,9 +48,9 @@ pageClass: download-page
         <p class="download-arch">Apple 芯片</p>
       </div>
     </div>
-    <code class="download-file">MiaCode_2.0.0-alpha_mac_arm64.7z</code>
+    <code class="download-file">MiaCode_2.0.0_mac_arm64.7z</code>
     <a class="download-help" :href="$withBase('/miacode/quick-start#下载与启动')">打不开的解决办法</a>
-    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0-alpha/MiaCode_2.0.0-alpha_mac_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
+    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_mac_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
   </section>
 </div>
 
