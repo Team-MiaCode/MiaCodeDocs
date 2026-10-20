@@ -1,4 +1,4 @@
-# MiacodeDocs
+# MiaCodeDocs
 
 MiaCode 的使用文档，使用 VitePress 构建。
 
