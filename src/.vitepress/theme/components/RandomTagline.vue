@@ -1,16 +1,26 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
+import { useData } from 'vitepress'
 import taglineData from '../taglines.json'
+import englishTaglines from '../taglines.en.json'
 
 const taglines = (Array.isArray(taglineData) ? taglineData : [])
   .filter((item): item is string => typeof item === 'string' && item.trim().length > 0)
   .map(item => item.trim())
 
-const text = ref('')
+const { lang } = useData()
+const selectedTagline = ref('')
+const translations: Record<string, unknown> = englishTaglines
+const text = computed(() => {
+  const original = selectedTagline.value
+  if (!lang.value.startsWith('en')) return original
+  const translation = translations[original]
+  return typeof translation === 'string' && translation.trim() ? translation.trim() : original
+})
 
 onMounted(() => {
   if (taglines.length > 0) {
-    text.value = taglines[Math.floor(Math.random() * taglines.length)]
+    selectedTagline.value = taglines[Math.floor(Math.random() * taglines.length)]
   }
 })
 </script>

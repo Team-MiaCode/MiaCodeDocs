@@ -8,7 +8,6 @@ titleTemplate: simai chart creation tool
 hero:
   name: MiaCode
   text: A maimai chart editor
-  tagline: Text editing, live preview, chart analysis, organization, and export.
   actions:
     - theme: brand
       text: Download MiaCode
