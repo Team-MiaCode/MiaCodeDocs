@@ -11,7 +11,7 @@ pageClass: download-page
 
 # 下载 MiaCode
 
-版本号 <span class="download-version">2.0.0</span> {.download-meta}
+版本号 <span class="download-version">2.0.1</span> {.download-meta}
 
 <!-- 维护下载链接时，以 MiaCode dev 分支 docs/ops/RELEASE_CHECKLIST.md 的
      Update Manifest 章节及线上 update/2/latest.json 为准。
@@ -26,8 +26,8 @@ pageClass: download-page
         <p class="download-arch">x64</p>
       </div>
     </div>
-    <code class="download-file">MiaCode_2.0.0_win_x64.7z</code>
-    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_win_x64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
+    <code class="download-file">MiaCode_2.0.1_win_x64.7z</code>
+    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.1/MiaCode_2.0.1_win_x64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
   </section>
   <section class="download-card">
     <div class="download-card-head">
@@ -37,8 +37,8 @@ pageClass: download-page
         <p class="download-arch">ARM64</p>
       </div>
     </div>
-    <code class="download-file">MiaCode_2.0.0_win_arm64.7z</code>
-    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_win_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
+    <code class="download-file">MiaCode_2.0.1_win_arm64.7z</code>
+    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.1/MiaCode_2.0.1_win_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
   </section>
   <section class="download-card">
     <div class="download-card-head">
@@ -48,9 +48,9 @@ pageClass: download-page
         <p class="download-arch">Apple 芯片</p>
       </div>
     </div>
-    <code class="download-file">MiaCode_2.0.0_mac_arm64.7z</code>
+    <code class="download-file">MiaCode_2.0.1_mac_arm64.7z</code>
     <a class="download-help" :href="$withBase('/miacode/quick-start#下载与启动')">打不开的解决办法</a>
-    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_mac_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
+    <a class="download-button" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.1/MiaCode_2.0.1_mac_arm64.7z">下载 .7z <span aria-hidden="true">↓</span></a>
   </section>
 </div>
 
@@ -60,6 +60,24 @@ pageClass: download-page
     <table class="download-archive-table" aria-label="往期版本下载">
       <thead><tr><th scope="col">版本</th><th scope="col">平台 / 架构</th><th scope="col">文件名</th><th scope="col">下载</th></tr></thead>
       <tbody>
+        <tr>
+          <td><span class="download-version">2.0.0</span></td>
+          <td><span class="download-archive-platform">Windows</span> <span class="download-archive-arch">x64</span></td>
+          <td><code class="download-file">MiaCode_2.0.0_win_x64.7z</code></td>
+          <td><a class="download-archive-link" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_win_x64.7z" aria-label="下载 MiaCode 2.0.0 Windows x64">.7z <span aria-hidden="true">↓</span></a></td>
+        </tr>
+        <tr>
+          <td><span class="download-version">2.0.0</span></td>
+          <td><span class="download-archive-platform">Windows</span> <span class="download-archive-arch">ARM64</span></td>
+          <td><code class="download-file">MiaCode_2.0.0_win_arm64.7z</code></td>
+          <td><a class="download-archive-link" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_win_arm64.7z" aria-label="下载 MiaCode 2.0.0 Windows ARM64">.7z <span aria-hidden="true">↓</span></a></td>
+        </tr>
+        <tr>
+          <td><span class="download-version">2.0.0</span></td>
+          <td><span class="download-archive-platform">macOS</span> <span class="download-archive-arch">Apple 芯片</span></td>
+          <td><code class="download-file">MiaCode_2.0.0_mac_arm64.7z</code></td>
+          <td><a class="download-archive-link" href="https://miacode.oss-cn-beijing.aliyuncs.com/release/2.0.0/MiaCode_2.0.0_mac_arm64.7z" aria-label="下载 MiaCode 2.0.0 macOS Apple 芯片">.7z <span aria-hidden="true">↓</span></a></td>
+        </tr>
         <tr>
           <td><span class="download-version">1.2.0</span></td>
           <td><span class="download-archive-platform">Windows</span> <span class="download-archive-arch">x64</span></td>
