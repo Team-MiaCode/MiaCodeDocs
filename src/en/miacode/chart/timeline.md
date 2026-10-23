@@ -17,7 +17,11 @@ Click the timeline to focus it, then hold the Left or Right arrow key to browse 
 
 ## Zoom
 
-Choose a preset from the percentage control at the upper left, or adjust zoom in Timeline settings. By default, hold `Ctrl/⌘` and scroll up to zoom in or down to zoom out. Customize these gestures in [Preferences → Shortcuts](/en/miacode/settings/preferences#shortcuts).
+Click the percentage at the upper left of the timeline to choose a zoom preset. The up arrow beside it increases zoom by one step, and the down arrow decreases it by one step.
+
+Scroll over the zoom control to step through presets, or focus the control and press the Up and Down arrow keys.
+
+Over the timeline area, hold `Ctrl/⌘` and scroll up to zoom in or down to zoom out. Customize these gestures in [Preferences → Shortcuts](/en/miacode/settings/preferences#shortcuts).
 
 <figure class="doc-figure doc-figure--compact">
 <a :href="$withBase('/images/timeline_zoom.png')" target="_blank"><img class="interface-shot" src="/images/timeline_zoom.png" alt="Timeline zoom menu" width="540" height="754" loading="lazy"></a>

@@ -1,6 +1,6 @@
 # Quick Start
 
-This page covers creating, opening, editing, and saving charts in 2.0.0-alpha.
+This page covers creating, opening, editing, and saving charts in 2.0.1.
 
 <figure class="doc-figure doc-figure--overview doc-figure--window">
 <a :href="$withBase('/images/main_dark.png')" target="_blank"><img class="interface-shot" src="/images/main_dark.png" alt="MiaCode workspace" width="2864" height="1864" loading="lazy"></a>

@@ -1,6 +1,6 @@
 # 快速开始
 
-本页介绍 2.0.0-alpha 中创建、打开、编辑和保存谱面的操作。
+本页介绍 2.0.1 中创建、打开、编辑和保存谱面的操作。
 
 <figure class="doc-figure doc-figure--overview doc-figure--window">
 <a :href="$withBase('/images/main_dark.png')" target="_blank"><img class="interface-shot" src="/images/main_dark.png" alt="MiaCode 工作区" width="2864" height="1864" loading="lazy"></a>

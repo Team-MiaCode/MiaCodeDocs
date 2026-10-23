@@ -20,7 +20,7 @@ Durations use valid duration syntax, including `#` for BPM changes; subdivisions
 
 ## Overview ruler
 
-The ruler sits beside the editor's vertical scrollbar: yellow marks warnings, blue marks bookmarks, and red marks errors or pattern warnings. A horizontal mark shows the caret or follow position. Use the Overview ruler switch to control its display.
+The overview ruler starts disabled. Enable Overview ruler under `Preferences → Editor`. It sits beside the editor's vertical scrollbar: yellow marks warnings, blue marks bookmarks, and red marks errors or pattern warnings. A horizontal mark shows the caret or follow position.
 
 ## Shortcuts
 
@@ -72,7 +72,7 @@ The file menu and editor use these combinations.
 
 ## Interface and layout
 
-Choose a language, light or dark theme, and palette. The sidebar supports standard and efficient modes. Choose Editor | Preview or Preview | Editor to arrange the panels. Blur materials controls interface effects.
+Choose a language, light or dark theme, and palette. Navigation mode offers Standard and Classic (1.x). Choose Editor | Preview or Preview | Editor to arrange the panels. Blur materials controls interface effects.
 
 ## Performance
 

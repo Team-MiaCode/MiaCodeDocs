@@ -1,6 +1,6 @@
 # Chart organization
 
-Chart organization formats subdivisions, line breaks, and spacing. Open it from `Tools → Chart organization`, `Transform → Chart organization`, or the editor context menu.
+Chart organization formats subdivisions, line breaks, and spacing. Open it with the Format Chart button above the editor, from `Tools → Format Chart` or `Transform → Format Chart`, or from the editor context menu.
 
 ## Processing range
 

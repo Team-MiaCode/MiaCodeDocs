@@ -17,7 +17,11 @@
 
 ## 缩放
 
-点击时间轴左上角的百分比选择缩放档位，或打开时间轴设置调整缩放。默认按住 `Ctrl/⌘` 向上滚轮放大，向下滚轮缩小；组合键可在[首选项 → 快捷键](/miacode/settings/preferences#快捷键)调整。
+点击时间轴左上角的百分比选择缩放档位。百分比右侧的向上箭头放大一档，向下箭头缩小一档。
+
+在缩放控件上滚动滚轮，或让控件获得焦点后按上、下方向键，可按档位放大、缩小。
+
+在时间轴区域按住 `Ctrl/⌘` 向上滚轮放大，向下滚轮缩小；组合键可在[首选项 → 快捷键](/miacode/settings/preferences#快捷键)调整。
 
 <figure class="doc-figure doc-figure--compact">
 <a :href="$withBase('/images/timeline_zoom.png')" target="_blank"><img class="interface-shot" src="/images/timeline_zoom.png" alt="时间轴缩放菜单" width="540" height="754" loading="lazy"></a>

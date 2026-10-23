@@ -12,6 +12,8 @@ Chart type supports automatic selection, DX, and SD. Choose how the level is ren
 
 For PV preview style, set the segment start with the range control. Audition plays the selected PV segment.
 
+The Background/PV Brightness slider on the intro page adjusts the PV preview style's picture brightness. The segment music uses a three-second fade-out across the wipe transition.
+
 With the range control focused, press Left or Right to move the segment start backward or forward by 0.1 seconds. Hold `Shift` with an arrow key to move it by 1 second.
 
 The start is saved for the chart and shared by its difficulties. Batch items use the start stored for their own chart.
