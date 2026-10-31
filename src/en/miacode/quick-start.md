@@ -14,7 +14,7 @@ Get a package from [Download MiaCode](/en/download).
 - **macOS**: open `MiaCode.app`, or move it to Applications. If macOS blocks it through quarantine, run this in Terminal from the extracted folder before launching:
 
   ```bash
-  xattr -dr com.apple.quarantine "MiaCode.app"
+  xattr -cr "MiaCode.app"
   ```
 
 Linux build instructions are in the repository [README](https://github.com/Team-MiaCode/MiaCode/blob/dev/README_EN.md#linux-advanced-users).

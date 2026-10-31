@@ -14,7 +14,7 @@
 - **macOS**：打开 `MiaCode.app`，也可放入“应用程序”文件夹。遇到系统隔离提示时，在解压目录的终端执行以下命令后启动：
 
   ```bash
-  xattr -dr com.apple.quarantine "MiaCode.app"
+  xattr -cr "MiaCode.app"
   ```
 
 Linux 构建步骤见仓库 [README](https://github.com/Team-MiaCode/MiaCode/blob/dev/README.md#linux适用于高级用户)。
